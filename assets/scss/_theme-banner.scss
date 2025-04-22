@@ -1,0 +1,1046 @@
+//theme-banner-one
+.theme-banner-one {
+    padding-top: 107px;
+    padding-bottom: 100px;
+    padding-left: 85px;
+    padding-right: 85px;
+    position: relative;
+    z-index: 1;
+
+    .shape-1 {
+        position: absolute;
+        right: 55%;
+        top: 39%;
+        animation: rotation infinite linear 55s;
+    }
+
+    .main-title {
+        color: $title2;
+        font-size: 120px;
+        line-height: 1;
+        margin-bottom: 22px;
+    }
+
+    .hero-description {
+        color: $body-text-color2;
+        font-size: 28px;
+        line-height: 45px;
+        margin-bottom: 58px;
+    }
+
+    .bstyle {
+        padding: 29px 50px 26px 50px;
+
+        &::before {
+            background: $theme-color2;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .bstyle-2 {
+        overflow: visible;
+        color: $body-text-color2;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: 1px solid $body-text-color2;
+        padding: 28px 75px 25px 35px;
+        display: inline-flex;
+        align-items: center;
+        background: $white;
+        border-radius: 40px;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            display: none;
+        }
+
+        .popup-video {
+            color: $white;
+            width: 75px;
+            height: 75px;
+            color: $black;
+            font-size: 35px;
+            line-height: 75px;
+            border-radius: 50%;
+            background: $theme-color2;
+            position: absolute;
+            right: -37px;
+            top: 0;
+
+            i {
+                color: $white;
+            }
+        }
+
+        &:hover {
+            color: $body-text-color2;
+            background: $theme-color;
+            border-color: $theme-color;
+        }
+    }
+
+    .main-img {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-img {
+        position: relative;
+
+    }
+
+    .card-shape {
+        position: absolute;
+        left: -8%;
+        bottom: 42px;
+        z-index: 2;
+    }
+
+    .rating-box {
+        h3 {
+            color: $title2;
+            font-weight: 500;
+            font-size: 28px;
+            font-family: $satoshiMedium;
+        }
+
+        span {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: $satoshiRegular;
+            font-weight: 400;
+        }
+    }
+
+    @media #{$max-xxl} {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 100px;
+
+        .main-title {
+            font-size: 65px;
+            line-height: 1.5;
+        }
+
+        .main-img {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .hero-img {
+
+            .shape-4,
+            .shape-5 {
+                display: none;
+            }
+        }
+    }
+
+    @media #{$max-lg} {
+
+        p {
+            font-size: 22px;
+            max-width: 100%;
+        }
+
+    }
+
+    @media #{$max-md} {
+
+        p {
+            font-size: 18px;
+        }
+
+    }
+
+    @media #{$max-xs} {
+
+        .main-title {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 34px;
+            max-width: 100%;
+        }
+
+        .bstyle {
+            padding: 29px 30px 26px 30px;
+        }
+    }
+}
+
+.hero-rating {
+    a {
+        font-size: 23px;
+        color: $body-text-color2;
+        display: inline-block;
+        margin-right: 5px;
+    }
+}
+
+//theme-banner-two
+.theme-banner-two {
+    background: #DEEBDC;
+    padding-top: 260px;
+    padding-bottom: 145px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+
+    .main-title {
+        color: $heding;
+        font-size: 120px;
+        line-height: 1;
+        margin-bottom: 27px;
+    }
+
+    p {
+        color: $body-text-color;
+        font-size: 28px;
+        line-height: 45px;
+        margin-bottom: 50px;
+        max-width: 99%;
+    }
+
+    .sub-title {
+        font-size: 22px;
+        font-family: $satoshiMedium;
+        font-weight: 500;
+        margin-bottom: 54px;
+    }
+
+    .rating-box {
+        h3 {
+            color: $heding;
+            font-weight: 500;
+            font-size: 28px;
+            font-family: $satoshiMedium;
+        }
+
+        span {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: $satoshiRegular;
+            font-weight: 400;
+        }
+    }
+
+    .hero-rating {
+        a {
+            color: $body-text-color;
+        }
+    }
+
+    .user-content-wrap-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    .card-shape {
+        position: absolute;
+        left: -18%;
+        bottom: 32px;
+        animation: float-bob-y infinite linear 5s;
+    }
+
+    .bs-style {
+        color: $theme-color2;
+        background: $theme-color;
+        border-radius: 40px;
+        padding-top: 28px;
+        padding-bottom: 26px;
+
+        &::before {
+            background: $theme-color2;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .bstyle-2 {
+        overflow: visible;
+        color: $heding;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: 2px solid $black;
+        padding: 8px 10px 8px 40px;
+        display: inline-flex;
+        align-items: center;
+        background: $white;
+        border-radius: 40px;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            display: none;
+        }
+
+        .popup-video {
+            color: $white;
+            width: 55px;
+            height: 55px;
+            color: $black;
+            font-size: 25px;
+            line-height: 55px;
+            border-radius: 50%;
+            background: $black;
+
+            i {
+                color: $white;
+            }
+        }
+
+        &:hover {
+            color: $body-text-color2;
+            background: $theme-color;
+            border-color: $theme-color;
+        }
+    }
+
+
+    @media #{$max-laptop} {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .main-title {
+            font-size: 75px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+    }
+
+    @media #{$max-lg} {
+
+        .main-title {
+            font-size: 65px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+
+    }
+
+    @media #{$max-md} {
+
+        padding-top: 200px;
+        padding-bottom: 100px;
+
+        .main-title {
+            font-size: 45px;
+            line-height: 1.3;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 34px;
+        }
+    }
+
+    @media #{$max-xs} {
+        padding-left: 0;
+        padding-right: 0;
+
+        .main-title {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 34px;
+            max-width: 100%;
+        }
+
+        .bstyle2 {
+            display: none;
+        }
+
+        .hero-subscribe-form {
+            button {
+                position: relative;
+                height: 55px;
+                width: 100%;
+                border-radius: 40px;
+                border: 2px solid #000;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.hero-subscribe-form {
+    width: 100%;
+    max-width: 666px;
+    position: relative;
+    z-index: 1;
+
+    input {
+        width: 100%;
+        height: 80px;
+        border: 2px solid $black;
+        color: $body-text-color;
+        font-size: 18px;
+        font-family: $satoshiRegular;
+        padding-left: 30px;
+        border-radius: 40px;
+
+        &::placeholder {
+            color: $body-text-color;
+            font-size: 18px;
+        }
+
+        &::-moz-placeholder {
+            color: $body-text-color;
+            font-size: 18px;
+        }
+
+        &::-webkit-placeholder {
+            color: $body-text-color2;
+            font-size: 18px;
+        }
+
+        &::-o-placeholder {
+            color: $body-text-color;
+            font-size: 18px;
+        }
+
+        &::-ms-placeholder {
+            color: $body-text-color;
+            font-size: 18px;
+        }
+    }
+
+    button {
+        color: $body-text-color;
+        font-size: 18px;
+        font-family: $radioCanada;
+        border: 2px solid $black;
+        border-left: 0;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        display: inline-block;
+        background: $theme-color;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 0 40px 40px 0;
+        height: 100%;
+        padding: 0px 37px 0 37px;
+        z-index: 2;
+        @include transition(.4s);
+
+        &:hover {
+            color: $white;
+            background: $theme-color2;
+        }
+    }
+}
+
+
+//theme-banner-three
+.theme-banner-three {
+    margin-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    display: block;
+    z-index: 2;
+
+
+    .main-title {
+        color: $white;
+        font-size: 120px;
+        font-family: $radioCanada;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 43px;
+    }
+
+    p {
+        color: $white;
+        font-size: 28px;
+        line-height: 45px;
+        font-family: $satoshiRegular;
+        margin-bottom: 32px;
+    }
+
+    .bstyle {
+        color: $black;
+        background: $theme-color;
+        border-radius: 40px;
+        padding: 25px 49px 25px 49px;
+
+        &::before {
+            background: $theme-color2;
+        }
+
+        &:hover {
+            color: $white;
+            background: $theme-color2;
+        }
+    }
+
+    .ht-slider-wrapper {
+        border-radius: 20px;
+        padding-left: 75px;
+        padding-right: 75px;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 615px;
+            border-radius: 0px 0px 50px 50px;
+            background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.65) 38.67%, rgba(0, 0, 0, 0.00) 69.63%, rgba(0, 0, 0, 0.00) 88.94%);
+            z-index: -1;
+        }
+    }
+
+    .rating-box {
+        h3 {
+            color: $heding;
+            font-weight: 500;
+            font-size: 28px;
+            font-family: $satoshiMedium;
+        }
+
+        span {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: $satoshiRegular;
+            font-weight: 400;
+        }
+    }
+
+    .hero-rating {
+        a {
+            color: $body-text-color;
+        }
+    }
+
+    .user-content-wrap-1 {
+        background: #fff;
+        border-radius: 100px;
+        padding: 27px 48px 0px 34px;
+        margin-left: auto;
+        width: max-content;
+    }
+
+    .feedback-user-list {
+        img {
+            border-color: $black;
+            border-width: 2px;
+        }
+    }
+
+    ul.slick-dots {
+        background: $white;
+        padding: 20px 35px;
+        border-radius: 70px;
+        display: inline-block;
+        width: max-content;
+        bottom: -40px;
+    }
+
+
+    @media #{$max-xl} {
+
+        .main-title {
+            font-size: 75px;
+        }
+
+    }
+
+    @media #{$max-laptop} {
+
+        .main-title {
+            font-size: 75px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+    }
+
+
+    @media #{$max-md} {
+        .ht-slider-wrapper {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .main-title {
+            font-size: 55px;
+        }
+    }
+
+    @media #{$max-xs} {
+        .main-title {
+            font-size: 45px;
+        }
+
+        .bstyle {
+            padding: 25px 30px 25px 30px;
+        }
+    }
+}
+
+//theme-banner-four
+.theme-banner-four {
+    margin-top: 50px;
+    padding-top: 230px;
+    padding-bottom: 329px;
+    position: relative;
+    display: block;
+    z-index: 2;
+
+    &::before {
+        content: '';
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+
+    .main-title {
+        color: $white;
+        font-size: 120px;
+        line-height: 1;
+        font-family: $radioCanada;
+        margin-bottom: 30px;
+    }
+
+    p {
+        color: $white;
+        font-size: 28px;
+        line-height: 45px;
+        font-family: $satoshiRegular;
+        max-width: 71%;
+        margin: 0 auto;
+        margin-bottom: 55px;
+    }
+
+    .bstyle {
+        color: $title2;
+        text-transform: uppercase;
+        background: $theme-color;
+        border-radius: 40px;
+        padding-top: 28px;
+        padding-bottom: 25px;
+
+        &::before {
+            background: $white;
+        }
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+    .bstyle-2 {
+        overflow: visible;
+        color: $white;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: 2px solid $white;
+        padding: 7px 10px 7px 40px;
+        display: inline-flex;
+        align-items: center;
+        background: transparent;
+        border-radius: 40px;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            display: none;
+        }
+
+        .popup-video {
+            color: $black;
+            width: 55px;
+            height: 55px;
+            font-size: 25px;
+            line-height: 55px;
+            border-radius: 50%;
+            background: $theme-color;
+
+            i {
+                color: $black;
+            }
+        }
+
+        &:hover {
+            color: $body-text-color2;
+            background: $theme-color;
+            border-color: $theme-color;
+
+            .popup-video {
+                background: $white;
+            }
+        }
+    }
+
+
+    @media #{$max-laptop} {
+
+        .main-title {
+            font-size: 75px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 38px;
+        }
+    }
+
+    @media #{$max-lg} {
+        padding-top: 180px;
+        padding-bottom: 100px;
+
+        .main-title {
+            font-size: 55px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+    }
+
+    @media #{$max-md} {
+
+        .main-title {
+            font-size: 55px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    @media #{$max-xs} {
+
+        .main-title {
+            font-size: 45px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 34px;
+            max-width: 100%;
+        }
+    }
+}
+
+
+//theme-banner-five
+.theme-banner-five {
+    padding-bottom: 70px;
+    padding-left: 100px;
+    padding-right: 38px;
+    position: relative;
+
+    .main-title {
+        color: $heding;
+        font-size: 120px;
+        line-height: 1;
+        margin-bottom: 27px;
+    }
+
+    p {
+        color: $body-text-color;
+        font-size: 28px;
+        line-height: 45px;
+        margin-bottom: 40px;
+        max-width: 99%;
+    }
+
+
+    .rating-box {
+        h3 {
+            color: $heding;
+            font-weight: 500;
+            font-size: 28px;
+            font-family: $satoshiMedium;
+        }
+
+        span {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: $satoshiRegular;
+            font-weight: 400;
+        }
+    }
+
+    .hero-rating {
+        a {
+            color: $body-text-color;
+        }
+    }
+
+
+    .card-shape {
+        position: absolute;
+        left: -144px;
+        bottom: 77px;
+        animation: float-bob-y infinite linear 5s;
+    }
+
+    .card-shape-2 {
+        position: absolute;
+        right: 42px;
+        top: 48px;
+        z-index: 1;
+    }
+
+    .bs-style {
+        color: $theme-color2;
+        background: $theme-color;
+        border-radius: 40px;
+        padding-top: 28px;
+        padding-bottom: 26px;
+
+        &::before {
+            background: $theme-color2;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .bstyle-2 {
+        overflow: visible;
+        color: $heding;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: 2px solid $black;
+        padding: 8px 10px 8px 40px;
+        display: inline-flex;
+        align-items: center;
+        background: $white;
+        border-radius: 40px;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            display: none;
+        }
+
+        .popup-video {
+            color: $body-text-color;
+            width: 55px;
+            height: 55px;
+            color: $black;
+            font-size: 25px;
+            line-height: 55px;
+            border-radius: 50%;
+            background: $theme-color;
+
+            i {
+                color: $white;
+            }
+        }
+
+        &:hover {
+            color: $body-text-color2;
+            background: $theme-color;
+            border-color: $theme-color;
+
+            .popup-video {
+                background: $theme-color2;
+            }
+        }
+    }
+
+    .hero-subscribe-form {
+        input {
+            border-radius: 15px;
+        }
+
+        button {
+            border-radius: 0 15px 15px 0;
+            @include transition(.4s);
+
+            &:hover {
+                color: $white;
+                background: $theme-color2;
+            }
+        }
+    }
+
+
+    @media #{$max-laptop} {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .main-title {
+            font-size: 75px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+    }
+
+    @media #{$max-lg} {
+
+        .main-title {
+            font-size: 65px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+
+    }
+
+    @media #{$max-md} {
+        padding-top: 60px;
+
+        .main-title {
+            font-size: 65px;
+            line-height: 1.3;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 34px;
+        }
+    }
+
+    @media #{$max-xs} {
+        padding-left: 0;
+        padding-right: 0;
+
+        .main-title {
+            font-size: 45px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 34px;
+            max-width: 100%;
+        }
+
+        .bstyle2 {
+            display: none;
+        }
+
+        .hero-subscribe-form {
+            button {
+                position: relative;
+                height: 55px;
+                width: 100%;
+                border-radius: 40px;
+                border: 2px solid #000;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+
+//user list thumb
+.user-list,
+.feedback-user-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 25px;
+    border-radius: 70px;
+    width: max-content;
+
+    img {
+        border-radius: 50%;
+        border: 4px solid $white;
+    }
+
+    li {
+        margin-left: -18px;
+        position: relative;
+        z-index: 1;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    .number {
+        border-radius: 50%;
+        background: #000;
+        font-size: 20px;
+        color: $white;
+        width: 65px;
+        height: 65px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 4px solid $white;
+    }
+}
+
+// .user-list-2 {
+//     padding: 0;
+//     margin: 0;
+//     display: flex;
+//     align-items: center;
+//     list-style: none;
+
+//     li {
+//         margin-left: -18px;
+//         position: relative;
+//         z-index: 1;
+
+//         &:first-child {
+//             margin-left: 0;
+//         }
+//     }
+
+//     img {
+//         border-radius: 50%;
+//         border: 4px solid $white;
+//     }
+
+//     .number {
+//         border-radius: 50%;
+//         background: #000;
+//         font-size: 20px;
+//         color: $white;
+//         width: 65px;
+//         height: 65px;
+//         display: inline-flex;
+//         align-items: center;
+//         justify-content: center;
+//         border: 4px solid $white;
+//     }
+// }

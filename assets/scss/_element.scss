@@ -1,0 +1,1077 @@
+//img-wrapper-one
+.img-wrapper-one {
+
+    .main-img {
+        position: relative;
+        z-index: 2;
+    }
+
+    .shape-1 {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+    }
+
+    .shape-2 {
+        border-radius: 15px;
+        position: absolute;
+        bottom: 72px;
+        left: 62px;
+        z-index: 2;
+        animation: float-bob-y infinite linear 5s;
+    }
+
+    .float-content-1 {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 163px;
+        z-index: 3;
+        background: $white;
+        border-radius: 15px;
+        padding: 20px 23px 20px 23px;
+        box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15);
+
+        .content {
+            flex: 1;
+        }
+
+        .icon {
+            margin-right: 18px;
+        }
+
+        .number {
+            color: $heding2;
+            font-size: 40px;
+            font-weight: 500;
+            font-family: $radioCanada;
+            line-height: 1;
+            margin-bottom: 0;
+        }
+
+        .text-title {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 12px;
+            font-family: $satoshiRegular;
+            font-weight: 400;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+    }
+
+    @media #{$max-laptop} {
+        .shape-2 {
+            display: none;
+        }
+    }
+
+    @media #{$max-xs} {
+        .float-content-1 {
+            display: none;
+        }
+    }
+}
+
+.img-wrapper-two {
+    position: relative;
+    z-index: 1;
+
+    .main-img {
+        border-radius: 30px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .card {
+        position: absolute;
+        left: -123px;
+        bottom: 95px;
+        z-index: 2;
+        border-radius: 27px;
+    }
+
+    .float-content-1 {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 40px;
+        top: 90px;
+        z-index: 3;
+        background: $white;
+        border-radius: 15px;
+        padding: 20px 25px 20px 20px;
+
+        .content {
+            flex: 1;
+        }
+
+        .icon {
+            margin-right: 14px;
+        }
+
+        .number {
+            color: $heding2;
+            font-size: 52px;
+            font-weight: 600;
+            font-family: $radioCanada;
+            line-height: 1;
+            margin-bottom: 0;
+        }
+
+        .text-title {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 12px;
+            font-family: $satoshiRegular;
+            font-weight: 400;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+    }
+
+    @media #{$max-xs} {
+        .float-content-1 {
+            display: none;
+        }
+    }
+}
+
+.img-wrapper-three {
+    position: relative;
+    z-index: 1;
+}
+
+.img-wrapper-four {
+    padding-right: 30px;
+    position: relative;
+    z-index: 1;
+
+    .main-img-1 {
+        border-radius: 94px;
+        margin-bottom: 30px;
+    }
+
+    .float-content-1,
+    .float-content-2 {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: -79px;
+        top: 50px;
+        z-index: 3;
+        background: $white;
+        border-radius: 15px;
+        box-shadow: 0px 50px 100px 0px rgba(0, 0, 0, 0.20);
+        padding: 30px 25px 30px 27px;
+
+        .content {
+            flex: 1;
+        }
+
+        .icon {
+            color: $heding;
+            font-size: 20px;
+            margin-right: 20px;
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            background: $theme-color;
+            text-align: center;
+            line-height: 33px;
+        }
+
+        .number {
+            color: $heding;
+            font-size: 38px;
+            font-weight: 600;
+            font-family: $radioCanada;
+            line-height: 1;
+            margin-bottom: 3px;
+        }
+
+        .text-title {
+            color: $heding;
+            font-size: 20px;
+            font-family: $satoshiRegular;
+            font-weight: 400;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+    }
+
+    .float-content-2 {
+        left: auto;
+        top: auto;
+        right: 45px;
+        bottom: 30px;
+    }
+
+
+    @media #{$max-lg} {}
+}
+
+.img-wrapper-five {
+    position: relative;
+    z-index: 1;
+
+    .float-content-1 {
+        display: flex;
+        align-items: start;
+        position: absolute;
+        left: 102px;
+        top: 150px;
+        z-index: 3;
+        background: $white;
+        border-radius: 15px;
+        padding: 21px 16px 24px 23px;
+
+        .content {
+            flex: 1;
+        }
+
+        .icon {
+            margin-right: 12px;
+            transform: translateY(10px);
+        }
+
+        .number {
+            color: $heding;
+            font-size: 80px;
+            font-weight: 600;
+            font-family: $radioCanada;
+            line-height: 1;
+            margin-bottom: 3px;
+        }
+
+        .text-title {
+            color: $heding;
+            font-size: 14px;
+            font-family: $satoshiRegular;
+            font-weight: 400;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+    }
+}
+
+.img-wrapper-six {
+    position: relative;
+    z-index: 1;
+
+    .main-img {
+        border-radius: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .rating-box {
+        border-radius: 20px;
+        background: $white;
+        box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.12);
+        width: max-content;
+        padding: 29px 47px 15px 47px;
+
+        h3 {
+            font-size: 28px;
+            font-weight: 500;
+            font-family: $satoshiMedium;
+
+            span {
+                color: rgba(30, 30, 30, 0.5);
+                font-weight: 400;
+                font-family: $satoshiRegular;
+            }
+        }
+    }
+
+    .hero-rating {
+        a {
+            font-size: 20px;
+            color: #FF7F49;
+        }
+    }
+
+    @media #{$max-xs} {}
+}
+
+
+.img-wrapper-seven {
+    position: relative;
+    z-index: 1;
+
+    .main-img {
+        border-radius: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .main-img2 {
+        position: absolute;
+        right: 28px;
+        z-index: 2;
+        top: 122px;
+    }
+}
+
+
+
+
+
+
+//video
+.video-wrap-1 {
+    position: relative;
+    z-index: 1;
+
+    .popup-video {
+        color: $black;
+        font-size: 55px;
+        width: 140px;
+        height: 140px;
+        background: $theme-color;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.video-content {
+    background: $grey;
+    border-radius: 20px;
+    padding: 80px 60px 72px 50px;
+
+    @media #{$max-lg} {
+        padding: 20px;
+    }
+}
+
+.video-section {
+    &.overlay-bg {
+        &::before {
+            background: rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+
+//counter-style-one
+
+.counter-wrap-1 {
+    text-align: center;
+    margin-bottom: 35px;
+
+    .number {
+        color: $theme-color;
+        font-size: 120px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        line-height: 1;
+        margin-bottom: 9px;
+    }
+
+    .counter-title {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 22px;
+        font-family: $satoshiRegular;
+    }
+
+    @media #{$max-lg} {
+        .number {
+            font-size: 75px;
+        }
+    }
+
+    @media #{$max-md} {
+
+        .number {
+            font-size: 60px;
+        }
+    }
+}
+
+.counter-wrap-2 {
+    background: $white;
+    border-radius: 30px;
+    padding: 37px 84px 17px 65px;
+    position: relative;
+    z-index: 1;
+
+    .counter-shape {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .number {
+        color: $heding2;
+        font-size: 130px;
+        font-weight: 400;
+        font-family: $radioCanada;
+        margin-bottom: 20px;
+        line-height: 1;
+        flex: 1;
+    }
+
+    .counter-title {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 32px;
+        line-height: 42px;
+        font-family: $satoshiRegular;
+        font-weight: 400;
+        margin-left: 53px;
+    }
+
+    @media #{$max-lg} {
+        .number {
+            font-size: 40px;
+        }
+
+        padding: 20px 15px;
+    }
+
+    @media #{$max-xs} {
+        .counter-title {
+            margin-left: 0;
+        }
+    }
+}
+
+.counter-wrap-3 {
+    position: relative;
+    z-index: 1;
+
+    .number {
+        color: $heding2;
+        font-size: 120px;
+        font-weight: 500;
+        font-family: $radioCanada;
+        line-height: 1;
+        display: inline-block;
+        border-bottom: 2px solid $theme-color2;
+    }
+
+    .counter-title {
+        color: $body-text-color2;
+        font-size: 30px;
+        line-height: 1;
+        font-family: $radioCanada;
+        font-weight: 500;
+        margin-left: 30px;
+    }
+
+    @media #{$max-lg} {
+        .number {
+            font-size: 40px;
+        }
+
+        padding: 20px 15px;
+    }
+
+    @media #{$max-xs} {
+        .counter-title {
+            margin-left: 0;
+        }
+    }
+}
+
+.counter-wrap-4 {
+    margin-bottom: 45px;
+    max-width: 375px;
+
+    .number {
+        color: $heding;
+        font-size: 110px;
+        font-weight: 500;
+        font-family: $radioCanada;
+        line-height: 1;
+        margin-bottom: 23px;
+    }
+
+    .counter-title {
+        color: $black;
+        font-size: 16px;
+        font-family: $satoshiBold;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    .counter-divider {
+        width: 100%;
+        height: 1.5px;
+        background: $black;
+        margin-bottom: 30px;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    @media #{$max-lg} {
+        .number {
+            font-size: 75px;
+        }
+
+        .description {
+            font-size: 18px;
+        }
+    }
+
+    @media #{$max-md} {
+
+        .number {
+            font-size: 60px;
+        }
+    }
+
+    @media #{$max-xs} {
+        max-width: 100%;
+    }
+}
+
+
+.counter-wrap-5 {
+    margin-bottom: 30px;
+
+    .number {
+        color: $heding2;
+        font-size: 90px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        font-style: italic;
+        line-height: 1;
+        margin-bottom: 23px;
+    }
+
+    .counter-title {
+        color: $black;
+        font-size: 22px;
+        font-family: $satoshiRegular;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+
+    @media #{$max-lg} {
+        .number {
+            font-size: 75px;
+        }
+
+        .counter-title {
+            font-size: 18px;
+        }
+    }
+
+    @media #{$max-md} {
+
+        .number {
+            font-size: 60px;
+        }
+    }
+
+    @media #{$max-xs} {}
+}
+
+.border-wrapper {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.author-quote {
+    text-align: center;
+    background: #2F2E45;
+    padding: 51px 45px 74px 45px;
+    border-radius: 30px;
+
+    .icon {
+        background: $theme-color;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        line-height: 70px;
+        margin-bottom: 37px;
+
+        img {
+            display: inline-block;
+        }
+    }
+
+    .quote-text {
+        color: $white;
+        font-size: 34px;
+        line-height: 1.6;
+        font-family: $satoshiRegular;
+        margin-bottom: 57px;
+    }
+
+    .name {
+        color: $white;
+        font-size: 20px;
+        font-family: $satoshiRegular;
+        font-weight: 500;
+
+        span {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    @media #{$max-laptop} {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .quote-text {
+            font-size: 30px;
+        }
+    }
+
+    @media #{$max-xs} {
+
+        .quote-text {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+}
+
+.service-tag-list {
+    a {
+        color: $heding;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $satoshiRegular;
+        display: inline-block;
+        border-radius: 50px;
+        background: $white;
+        padding: 8px 40px;
+        margin: 3px 1px;
+        @include transition(.4s);
+
+        &:hover {
+            color: $white;
+            background: $theme-color2;
+        }
+    }
+}
+
+
+//brand 
+.brand-wrap-1 {
+    max-width: 86vw;
+    margin: 0 auto;
+
+
+    .brand-item {
+        text-align: center;
+
+        a {
+            display: inline-block;
+        }
+
+        img {
+            display: inline-block;
+        }
+    }
+
+    @media #{$max-lg} {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+
+.brand-wrap-2 {
+    padding-left: 85px;
+
+    h4 {
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 23px;
+        font-weight: 400;
+        font-family: $radioCanada;
+
+        .number {
+            color: $heding;
+            font-size: 26px;
+            font-weight: 500;
+            border-bottom: 1px solid $heding;
+
+        }
+    }
+
+    .brand-item {
+        a {
+            display: inline-block;
+        }
+
+        img {
+            display: inline-block;
+        }
+    }
+
+    @media #{$max-lg} {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+
+//icon-box
+.icon-box {
+    img {
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .icon {
+        color: $theme-color;
+        font-size: 20px;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        background: rgba($color: $theme-color, $alpha: 0.1);
+        @include transition(0.4s);
+    }
+
+    &:hover {
+        .icon {
+            color: $white;
+            background: $theme-color;
+        }
+    }
+}
+
+//skill
+.skill-wrapper-box {
+    padding-left: 80px;
+    padding-right: 315px;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    @media (max-width: 1800px) {
+        padding-right: 50px;
+        padding-top: 42px;
+    }
+
+    @media (max-width: 991px) {
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 60px;
+    }
+}
+
+.skill-wrapper {
+    position: relative;
+    z-index: 1;
+
+    .skill-title {
+        font-size: 16px;
+        font-weight: 400;
+        color: $heding;
+        font-family: $satoshiRegular;
+    }
+
+    .progress {
+        height: 7px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 0px;
+        overflow: visible;
+        position: relative;
+        z-index: 1;
+
+        .progress-bar {
+            height: 7px;
+            background: $theme-color;
+            width: 72%;
+            border-radius: 0px;
+            overflow: visible;
+        }
+
+        span {
+            color: $heding;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: $radioCanada;
+            position: absolute;
+            right: 13%;
+            top: -30px;
+        }
+    }
+
+    &.sk-2 {
+        .progress .progress-bar {
+            width: 55%;
+        }
+
+        .skill-title span {
+            right: 15%;
+        }
+    }
+
+    &.sk-3 {
+        .progress .progress-bar {
+            width: 95%;
+        }
+
+        .skill-title span {
+            right: 8%;
+        }
+    }
+}
+
+.progressbar-content {
+    text-align: center;
+    display: inline-block;
+
+    .chart,
+    .chart2 {
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+
+        span {
+            color: $heding;
+            font-size: 60px;
+            font-family: $radioCanada;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 50%;
+            transform: translateY(-77%);
+        }
+    }
+
+    .progress-title {
+        font-size: 28px;
+        font-family: $satoshiMedium;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    @media #{$max-lg} {
+        .chart {
+            span {
+                font-size: 48px;
+            }
+        }
+
+        .progress-title {
+            font-size: 22px;
+        }
+    }
+}
+
+//marque text
+.ht-marquee-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:hover .marquee-slide {
+        animation-play-state: paused;
+    }
+}
+
+.marquee-slide {
+    display: inline-block;
+    animation: 35s marqueslide infinite linear;
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+
+    .marquee-text {
+        color: transparent;
+        font-size: 200px;
+        font-weight: 600;
+        line-height: 1;
+        -webkit-text-stroke: 1px rgba($color: $heding, $alpha: 0.1);
+        position: relative;
+
+        &::before {
+            content: attr(data-text);
+            position: absolute;
+            width: 0;
+            height: 100%;
+            color: $heding;
+            -webkit-text-stroke: 0px transparent;
+            overflow: hidden;
+            transition: width 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+            opacity: 0.01;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+    }
+
+    @media #{$max-laptop} {
+        .marquee-text {
+            font-size: 120px;
+        }
+    }
+}
+
+
+//coming-soon
+.website-timer {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+//workign-process
+.working-process-section {
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    .shape-1 {
+        position: absolute;
+        top: 60px;
+        left: 170px;
+    }
+
+    .shape-2 {
+        position: absolute;
+        right: 88px;
+        top: 105px;
+    }
+}
+
+.working-process-section-2 {
+    background: $light-grey;
+    padding-left: 175px;
+    padding-right: 175px;
+
+    .shape-1 {
+        position: absolute;
+        top: 60px;
+        left: 170px;
+    }
+
+    .shape-2 {
+        position: absolute;
+        right: 88px;
+        top: 105px;
+        transform: rotate(90deg);
+    }
+
+    @media #{$max-laptop} {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @media #{$max-md} {
+
+        .shape-1,
+        .shape-2 {
+            display: none;
+        }
+    }
+}
+
+.process-wrap-1 {
+    margin-bottom: 45px;
+    text-align: center;
+
+    .icon {
+        background: $theme-color2;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+
+    .process-title {
+        color: $white;
+        font-size: 40px;
+        font-family: $radioCanada;
+        font-weight: 600;
+    }
+
+    .description {
+        color: $white;
+    }
+
+    @media #{$max-laptop} {
+        .process-title {
+            font-size: 24px;
+        }
+    }
+}
+
+
+.process-wrap-2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 45px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    .arrow-icon {
+        position: absolute;
+        z-index: 1;
+        right: -14%;
+        top: 16%;
+    }
+
+    .icon {
+        background: $theme-color;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 35px;
+
+        img {
+            filter: invert(1);
+        }
+    }
+
+    .process-title {
+        color: $heding2;
+        font-size: 40px;
+        font-family: $radioCanada;
+        font-weight: 600;
+    }
+
+    .description {
+        color: $body-text-color2;
+    }
+
+    @media #{$max-laptop} {
+        .process-title {
+            font-size: 24px;
+        }
+
+        .arrow-icon {
+            right: 50px;
+            z-index: -1;
+        }
+    }
+}

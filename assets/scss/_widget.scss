@@ -1,0 +1,490 @@
+//widget
+
+
+.widget-title {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: $radioCanada;
+}
+
+.blog-sidebar,
+.service-widget {
+    .widget-title {
+        margin-bottom: 26px;
+    }
+
+    .widget {
+        padding-bottom: 30px;
+    }
+}
+
+//social-links
+.social-links {
+    & a {
+        color: $heding2;
+        font-size: 22px;
+        border: 1px solid $black;
+        margin-right: 10px;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 47px;
+        border-radius: 50%;
+        @include transition(0.4s);
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: $white;
+            background: $theme-color;
+        }
+    }
+}
+
+.social-links2 {
+    & a {
+        color: $heding;
+        font-size: 22px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: $hr-border-color;
+        margin-right: 10px;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        @include transition(0.4s);
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            border-color: $theme-color2;
+            background: $theme-color2;
+        }
+    }
+}
+
+
+//category-widget
+.service-category-widget,
+.category-widget {
+    li {
+        &:last-child {
+            a {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            color: $heding;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+            font-family: $satoshiMedium;
+            background: $white;
+            padding: 0 20px 16px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            margin-bottom: 20px;
+            display: block;
+            position: relative;
+            z-index: 1;
+
+            &:hover {
+                color: $theme-color2;
+            }
+        }
+    }
+}
+
+.widget-file {
+    .file-download {
+        color: #191f23;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        font-family: $radioCanada;
+        padding: 15px 10px 15px 20px;
+        background: $white;
+        border: 1px solid rgba(7, 17, 6, 0.1);
+        margin-bottom: 20px;
+        display: block;
+        position: relative;
+        z-index: 1;
+        @include transition(0.4s);
+
+        &:hover {
+            color: $white;
+            background: $theme-color;
+        }
+    }
+
+    ul {
+        li:last-child {
+            .file-download {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+//widget-form
+
+.comment-form {
+
+    input,
+    textarea {
+        border: 0;
+        background: $grey;
+        border-radius: 0;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        display: block;
+        height: 60px;
+        width: 100%;
+        padding-left: 20px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+
+        &:focus {
+            outline: none;
+            border-color: $heding;
+        }
+
+        &::placeholder {
+            color: $body-text-color;
+            font-size: 16px;
+        }
+
+        &::-moz-placeholder {
+            color: $body-text-color;
+            font-size: 16px;
+        }
+
+        &::-webkit-placeholder {
+            color: $body-text-color;
+            font-size: 16px;
+        }
+
+        &::-o-placeholder {
+            color: $body-text-color;
+            font-size: 16px;
+        }
+
+        &::-ms-placeholder {
+            color: $body-text-color;
+            font-size: 16px;
+        }
+    }
+
+    textarea {
+        height: 146px;
+        resize: none;
+        padding-top: 10px;
+    }
+
+    button {
+        color: $black;
+        padding: 18px 40px 17px 40px;
+        background: $theme-color;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+
+        input {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+    }
+}
+
+//page-navigation
+.page-navigation {
+    .page-item:first-child .page-link {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .page-item:last-child .page-link {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .page-link {
+        display: inline-block;
+        color: $heding;
+        background: transparent;
+        font-size: 22px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-right: 20px;
+        padding: 0;
+        border-radius: 5px;
+        border: 1px solid $heding;
+
+        i {
+            font-size: 20px;
+        }
+
+        &:focus {
+            z-index: 2;
+            color: $heding;
+            border-color: unset;
+            outline: none;
+            box-shadow: none;
+        }
+
+        &:hover {
+            color: $body-text-color;
+            background: $theme-color;
+            border-color: $theme-color;
+        }
+    }
+}
+
+//widget-post
+.recent-post {
+    display: flex;
+    align-items: center;
+
+    .post-thumb {
+        width: 100px;
+        height: 85px;
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 0;
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        background-repeat: no-repeat;
+    }
+
+    h5 {
+        font-size: 16px;
+        font-family: $radioCanada;
+        font-weight: 500;
+        line-height: 22px;
+
+        a {
+            color: $heding;
+        }
+
+        & a:hover {
+            color: $theme-color2;
+        }
+    }
+
+    span {
+        color: $body-text-color;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: $satoshiRegular;
+
+        i {
+            color: $body-text-color;
+        }
+    }
+
+    @media (max-width: 1599.98px) {
+        h5 {
+            font-size: 18px;
+        }
+    }
+}
+
+//widget-search
+.widget-search {
+    .search-form {
+        position: relative;
+        z-index: 1;
+
+        input {
+            color: $white;
+            font-size: 20px;
+            height: 60px;
+            width: 100%;
+            line-height: 60px;
+            padding-left: 22px;
+            background: $theme-color2;
+            border-radius: 8px;
+            border: 0;
+
+            &::placeholder,
+            &::-webkit-placeholder,
+            &::-moz-placeholder,
+            &::-o-placeholder {
+                font-size: 20px;
+                color: $white;
+            }
+
+        }
+
+        .widget-btn {
+            color: $white;
+            background: transparent;
+            border: 0;
+            width: 54px;
+            height: 50px;
+            line-height: 50px;
+            color: $white;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            border-radius: 6px;
+            z-index: 1;
+
+            i {
+                color: $black;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+.tagcloud {
+    span {
+        color: #191f23;
+        font-size: 24px;
+        font-weight: 600;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    a {
+        color: $body-text-color;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+        font-family: $radioCanada;
+        border: 1px solid $black;
+        display: inline-block;
+        padding: 10px 24px;
+        margin: 5px 5px;
+        border-radius: 4px;
+        @include transition(0.3s);
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            background: $white;
+            width: 0px;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -ms-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: $white;
+            border-color: $theme-color2;
+
+            &::before {
+                width: 100%;
+                background: $theme-color2;
+            }
+        }
+
+        @media #{$laptop} {
+            padding: 16px 16px;
+            margin: 5px 2px;
+        }
+
+        @media #{$xs} {
+            padding: 16px 10px;
+            margin: 5px 2px;
+        }
+    }
+}
+
+//for service details
+.widget-contact {
+    text-align: center;
+    background: $theme-color2;
+    border-radius: 10px;
+    padding: 40px 40px;
+
+    p {
+        color: $body-text-color;
+        font-size: 22px;
+        background: $theme-color;
+        border-radius: 50px;
+        width: max-content;
+        padding: 12px 20px;
+        margin: 0 auto;
+
+        span {
+            color: $white;
+            font-size: 18px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            background: $theme-color2;
+        }
+    }
+
+    .contact-title {
+        font-size: 26px;
+        font-weight: 600;
+        font-family: $radioCanada;
+    }
+
+
+    .contact-btn {
+        color: $black;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        border-radius: 50px;
+        background: $white;
+        color: $black;
+        padding: 15px 40px;
+        width: 100%;
+        display: inline-block;
+
+        &:hover {
+            color: $white;
+            background: $black;
+        }
+    }
+
+
+    .contact-title {
+        color: $white;
+        font-size: 28px;
+
+        @media #{$max-lg} {
+            font-size: 22px;
+            line-height: 40px;
+        }
+    }
+
+    @media #{$max-lg} {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

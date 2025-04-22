@@ -1,0 +1,439 @@
+/* 1. Theme default css */
+
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+// scrollbar custom design
+html,
+body {
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	&::-moz-scrollbar {
+		width: 5px;
+	}
+
+	&::-ms-scrollbar {
+		width: 5px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #c1c1c1;
+	}
+
+	&::-moz-scrollbar-track {
+		background: #c1c1c1;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $theme-color;
+		outline: none;
+	}
+
+	&::-moz-scrollbar-thumb {
+		background-color: $theme-color;
+		outline: none;
+	}
+
+	&::-webkit-scrollbar-thumb:active {
+		background: $heding;
+	}
+
+	&::-moz-scrollbar-thumb:active {
+		background: $heding;
+	}
+}
+
+.slick-track>[class*=col] {
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	width: 100%;
+	max-width: 100%;
+	padding-right: calc(var(--bs-gutter-x) / 2);
+	padding-left: calc(var(--bs-gutter-x) / 2);
+	margin-top: var(--bs-gutter-y);
+}
+
+
+body {
+	font-family: $satoshiRegular;
+	font-size: 18px;
+	line-height: 34px;
+	font-weight: 400;
+	font-style: normal;
+	color: $body-text-color;
+}
+
+.main-page-wrapper {
+	overflow-x: hidden;
+}
+
+// .img,img {
+// 	max-width: 100%;
+// 	@include transition(.3s);
+// }
+
+.fix {
+	overflow: hidden;
+}
+
+a,
+.button {
+	@include transition(0.3s);
+}
+
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+a,
+button {
+	color: inherit;
+	outline: medium none;
+	text-decoration: none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+	outline: 0;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-family: $radioCanada;
+	color: $heding;
+	line-height: 1.4;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: normal;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+.list-none {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 34px;
+	font-family: $satoshiRegular;
+	color: $body-text-color;
+	margin-bottom: 15px;
+}
+
+hr {
+	border-bottom: 1px solid rgab($white, 0.1);
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+
+label {
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+*::-moz-selection {
+	background: $black;
+	color: $white;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: $black;
+	color: $white;
+	text-shadow: none;
+}
+
+::selection {
+	background: $black;
+	color: $white;
+	text-shadow: none;
+}
+
+/*--
+    - Input Placeholder
+-----------------------------------------*/
+*::-moz-placeholder {
+	color: $black;
+	font-size: 14px;
+	opacity: 1;
+}
+
+*::placeholder {
+	color: $black;
+	font-size: 14px;
+	opacity: 1;
+}
+
+/*--
+    - Common Classes
+-----------------------------------------*/
+.fix {
+	overflow: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+//overlay-bg
+
+.overlay-bg {
+	position: relative;
+	z-index: 2;
+
+	&::before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.background-image {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+//video-icon
+.popup-video {
+	color: $white;
+	border-radius: 50%;
+	background: $yellow-color;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 90px;
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	text-align: center;
+	-webkit-transition: all 0.4s ease-out 0s;
+	-moz-transition: all 0.4s ease-out 0s;
+	-ms-transition: all 0.4s ease-out 0s;
+	-o-transition: all 0.4s ease-out 0s;
+	transition: all 0.4s ease-out 0s;
+	position: relative;
+	z-index: 1;
+	animation: pulseBig infinite 5s linear;
+
+	&:hover {
+		color: $white;
+		background: $theme-color;
+	}
+}
+
+//custom-container
+.custom-container-1600 {
+	padding-left: 145px;
+	padding-right: 145px;
+
+	@media #{$max-xl} {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+// others common css here :)
+//  Preloader
+.ctn-preloader {
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999999;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	.icon {
+		animation: rotated 8s infinite linear;
+	}
+
+	.txt-loading {
+		user-select: none;
+		margin-top: 30px;
+
+		.letters-loading {
+			font-family: $radioCanada;
+			font-weight: 700;
+			letter-spacing: 8px;
+			display: inline-block;
+			color: rgba($color: $heding, $alpha: 0.12);
+			position: relative;
+			font-size: 50px;
+			line-height: 30px;
+
+			&::before {
+				animation: letters-loading 4s infinite;
+				color: $heding;
+				content: attr(data-text-preloader);
+				left: 0;
+				opacity: 0;
+				top: 0;
+				line-height: 30px;
+				position: absolute;
+			}
+
+			&:nth-child(2):before {
+				animation-delay: 0.2s;
+			}
+
+			&:nth-child(3):before {
+				animation-delay: 0.4s;
+			}
+
+			&:nth-child(4):before {
+				animation-delay: 0.6s;
+			}
+
+			&:nth-child(5):before {
+				animation-delay: 0.8s;
+			}
+
+			&:nth-child(6):before {
+				animation-delay: 1s;
+			}
+
+			&:nth-child(7):before {
+				animation-delay: 1.2s;
+			}
+
+			&:nth-child(8):before {
+				animation-delay: 1.4s;
+			}
+		}
+	}
+}
+
+@keyframes spinner {
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes letters-loading {
+
+	0%,
+	75%,
+	100% {
+		opacity: 0;
+		transform: rotateY(-90deg);
+	}
+
+	25%,
+	50% {
+		opacity: 1;
+		transform: rotateY(0deg);
+	}
+}
+
+//scrollup
+#scrollToTopBtn {
+	font-size: 18px;
+	display: inline-block;
+	background: $theme-color;
+	position: fixed;
+	width: 35px;
+	height: 35px;
+	right: 7px;
+	bottom: 7px;
+	border-radius: 6px;
+	line-height: 35px;
+	text-align: center;
+	transition:
+		background-color 0.3s,
+		opacity 0.5s,
+		visibility 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+}
+
+#scrollToTopBtn i {
+	color: #fff;
+}
+
+#scrollToTopBtn:hover {
+	cursor: pointer;
+	background-color: #333;
+}
+
+#scrollToTopBtn.show {
+	opacity: 1;
+	visibility: visible;
+}

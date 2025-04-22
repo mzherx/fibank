@@ -1,0 +1,117 @@
+@mixin transition($time) {
+	-webkit-transition: all $time ease-out 0s;
+	-moz-transition: all $time ease-out 0s;
+	-ms-transition: all $time ease-out 0s;
+	-o-transition: all $time ease-out 0s;
+	transition: all $time ease-out 0s;
+}
+@mixin transition($times) {
+	-webkit-transition: all $times ease 0s;
+	-moz-transition: all $times ease 0s;
+	-ms-transition: all $times ease 0s;
+	-o-transition: all $times ease 0s;
+	transition: all $times ease 0s;
+}
+
+@mixin transform($value) {
+  -webkit-transform: $value;
+      -ms-transform: $value;
+          transform: $value;
+}
+
+
+
+
+@function _rgba($color, $opacity: 1) {
+	@return unquote("rgba(#{red($color)}, #{green($color)}, #{blue($color)}, #{$opacity})");
+}
+
+@mixin equal-size ($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+
+@mixin background-opacity($color, $opacity: 0.3) {
+	background: rgba($color, $opacity);
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+@mixin mq($value) {
+	@if $value=='xxl' {
+		@media (min-width: 1601px) and (max-width: 1900px) {
+			@content;
+		}
+	}
+
+	@if $value=='xl' {
+		@media (min-width: 1401px) and (max-width: 1600px) {
+			@content;
+		}
+	}
+
+	@if $value=='laptop' {
+		@media (min-width: 1200px) and (max-width: 1400px) {
+			@content;
+		}
+	}
+
+	@if $value=='lg' {
+		@media (min-width: 992px) and (max-width: 1200px) {
+			@content;
+		}
+	}
+
+	@if $value=='md' {
+		@media (min-width: 768px) and (max-width: 991px) {
+			@content;
+		}
+	}
+
+	@if $value=='xs' {
+		@media (max-width: 767px) {
+			@content;
+		}
+	}
+
+	@if $value=='sm' {
+		@media only screen and (min-width: 576px) and (max-width: 767px) {
+			@content;
+		}
+	}
+}
+
+@mixin cmq($min, $max) {
+	@media (min-width: $min) and (max-width: $max) {
+		@content;
+	}
+}
+
+@mixin cmmq($min) {
+	@media (min-width: $min) {
+		@content;
+	}
+}
+
+@mixin cmaq($max) {
+	@media (max-width: $max) {
+		@content;
+	}
+}

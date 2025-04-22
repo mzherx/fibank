@@ -1,0 +1,455 @@
+//team
+
+.team-wrap-1 {
+    border-radius: 30px;
+    background: #F4F4F4;
+    border: 2px solid $black;
+    margin-bottom: 45px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    @include transition(.4s);
+
+    .team-thumb {
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        img {
+            border-radius: 10px;
+            @include transition(.4s);
+        }
+    }
+
+    .team-social {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        right: -150px;
+        top: 20px;
+        z-index: 2;
+        @include transition(.4s);
+    }
+
+    .content {
+        text-align: center;
+        background: $theme-color;
+        padding: 25px 43px 14px 40px;
+        position: absolute;
+        width: 83%;
+        border-radius: 40px;
+        bottom: -30%;
+        min-height: 70px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 3;
+        @include transition(.4s);
+    }
+
+    .name {
+        color: $heding;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: $radioCanada;
+
+        a {
+            margin-bottom: 0;
+        }
+    }
+
+    .designation {
+        color: $heding;
+        font-size: 28px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        margin-bottom: 4px;
+        @include transition(.4s);
+    }
+
+    &:hover {
+        background: #DEEBDC;
+        border: 2px solid #DEEBDC;
+
+        .content {
+            bottom: 30px;
+        }
+
+        .team-social {
+            right: 20px;
+        }
+
+    }
+
+    @media #{$max-lg} {
+        .content {
+            bottom: 15px;
+        }
+
+        .name {
+            a {
+                font-size: 20px;
+            }
+        }
+
+        .designation {
+            font-size: 18px;
+        }
+    }
+}
+
+.team-wrap-2 {
+    text-align: center;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+    @include transition(.4s);
+
+    .team-thumb {
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        img {
+            border-radius: 30px;
+            @include transition(.4s);
+        }
+    }
+
+    .team-social {
+        display: inline-flex;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        @include transition(.4s);
+
+        a {
+            font-size: 25px;
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+
+            &:hover {
+                color: $theme-color;
+                background: $theme-color2;
+            }
+        }
+    }
+
+    .content {
+        padding-top: 19px;
+        @include transition(.4s);
+    }
+
+    .designation {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        margin-bottom: 0;
+        @include transition(.4s);
+    }
+
+
+    .name {
+        color: $heding;
+        font-size: 28px;
+        font-weight: 500;
+        font-family: $radioCanada;
+        margin-bottom: 4px;
+    }
+
+    &:hover {
+        .team-social {
+            bottom: 25px;
+        }
+
+        .name {
+            a {
+                color: $theme-color2;
+            }
+        }
+
+    }
+
+    @media #{$max-lg} {
+
+        .name {
+            a {
+                font-size: 20px;
+            }
+        }
+
+        .designation {
+            font-size: 18px;
+        }
+    }
+}
+
+.team-wrap-3 {
+    background: #F4F4F4;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+    @include transition(.4s);
+
+    .team-thumb {
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        img {
+            border-radius: 30px;
+            @include transition(.4s);
+        }
+    }
+
+    .team-social {
+        display: inline-flex;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        @include transition(.4s);
+
+        a {
+            font-size: 25px;
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+
+            &:hover {
+                background: $theme-color2;
+            }
+        }
+    }
+
+    .content {
+        padding-top: 30px;
+        @include transition(.4s);
+    }
+
+    .designation {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        margin-bottom: 0;
+        @include transition(.4s);
+    }
+
+
+    .name {
+        color: $heding;
+        font-size: 28px;
+        font-weight: 500;
+        font-family: $radioCanada;
+        margin-bottom: 4px;
+    }
+
+    &:hover {
+        .team-social {
+            bottom: 25px;
+        }
+
+        .name {
+            a {
+                color: $theme-color2;
+            }
+        }
+
+    }
+
+    @media #{$max-lg} {
+        padding: 15px;
+
+        .name {
+            a {
+                font-size: 20px;
+            }
+        }
+
+        .designation {
+            font-size: 18px;
+        }
+    }
+}
+
+
+.team-social {
+
+    a {
+        color: $heding;
+        font-size: 20px;
+        background: $white;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 45px;
+        display: inline-block;
+
+        @include transition(0.4s);
+
+        i {
+            @include transition(0.4s);
+        }
+
+        &:hover {
+            color: $white;
+            background: $theme-color;
+
+            i {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.team-social-2 {
+    a {
+        color: $heding;
+        font-size: 22px;
+        text-align: center;
+        line-height: 48px;
+        border: 1px solid rgba(0, 0, 0, 1);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        margin-right: 10px;
+        @include transition(0.4s);
+
+        &:hover {
+            color: $body-text-color;
+            border-color: $theme-color;
+            background: $theme-color;
+        }
+    }
+}
+
+.biography-content-wrap {
+
+    .team-biography {
+        img {
+            border-radius: 30px 0 0 30px;
+        }
+
+        @media #{$max-md} {
+            margin-bottom: 40px;
+
+            img {
+                border-radius: 30px;
+            }
+        }
+    }
+
+    .name {
+        font-size: 60px;
+        font-weight: 600;
+        font-family: $radioCanada;
+
+        a {
+            color: $heding;
+        }
+    }
+
+    .designation {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .description {
+        margin-bottom: 35px;
+        max-width: 79%;
+    }
+
+    .addres-line {
+        color: $body-text-color;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        padding-bottom: 15px;
+
+        span {
+            font-weight: 400;
+            font-family: $satoshiRegular;
+        }
+    }
+
+
+    .contact-btn {
+        border: 1px solid #000;
+        border-radius: 30px;
+        padding: 14px 40px;
+        font-weight: 600;
+        @include transition(.4s);
+
+        &:hover {
+            color: $white;
+            background: $theme-color;
+            border-color: $theme-color;
+        }
+    }
+
+
+    @media #{$max-lg} {
+
+        .name {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        .description {
+            max-width: 100%;
+        }
+
+        .addres-line {
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.biography-content {
+    background: $grey;
+    padding: 67px 60px 67px 75px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+
+    .team-social-2 {
+        position: absolute;
+        right: 60px;
+        bottom: 85px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @media #{$max-lg} {
+        padding: 25px 15px;
+
+        .team-social-2 {
+            position: relative;
+            flex-direction: row;
+            bottom: 0;
+            left: 0;
+            gap: 10px;
+        }
+    }
+}

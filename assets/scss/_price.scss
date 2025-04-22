@@ -1,0 +1,256 @@
+//ht-plan
+.ht-plan {
+    background: $grey;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+
+    .shape-holder {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        .icon,
+        .back-icon {
+            position: absolute;
+            right: 33px;
+            top: 43px;
+        }
+
+        .front-shape {
+            @include transition(.4s);
+        }
+
+        .back-shape,
+        .back-icon {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            @include transition(.4s);
+        }
+
+        @media #{$max-xs} {
+            display: none;
+        }
+    }
+
+    &.active,
+    &:hover {
+        background: $theme-color2;
+
+        .back-shape,
+        .back-icon {
+            display: inline-block;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .front-shape,
+        .icon {
+            visibility: hidden;
+            opacity: 0;
+            display: none;
+        }
+
+        .plan-title,
+        .plan-desc,
+        .plan-price {
+            color: $white;
+        }
+
+        .feature-list li {
+            color: $white;
+        }
+
+        .feature-list li.price-available .check-mark {
+            color: $theme-color;
+        }
+
+        .feature-list li.unavailable .check-mark {
+            color: $theme-color;
+        }
+
+        .feature-list li.unavailable {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .price-btn {
+            border-color: $theme-color;
+            background: $theme-color;
+        }
+    }
+
+}
+
+.ht-plan-tag {
+    border-top: 1px solid $heding;
+    border-right: 1px solid $heding;
+    border-left: 1px solid $heding;
+    text-align: center;
+    background: #0BC270;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0px 0px;
+    color: #fff;
+    font-weight: 700;
+    font-family: $radioCanada;
+    height: 50px;
+    line-height: 50px;
+}
+
+.ht-plan-inner {
+    padding: 45px 43px 40px 43px;
+    @include transition(0.4s);
+
+
+    .plan-title {
+        color: $heding;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $satoshiBold;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    .plan-desc {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: $satoshiRegular;
+        margin-bottom: 32px;
+    }
+
+    .plan-price {
+        color: $heding;
+        font-size: 80px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        font-style: italic;
+    }
+
+    .price-border {
+        height: 1px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.15);
+        display: block;
+        margin-bottom: 38px;
+    }
+
+    .feature-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            font-size: 18px;
+            font-weight: 500;
+            color: $heding;
+            font-family: $satoshiMedium;
+            display: block;
+            padding-bottom: 6px;
+
+            .check-mark {
+                color: $body-text-color;
+                font-size: 20px;
+                display: inline-block;
+                transform: translateY(2px);
+            }
+
+            &.price-available {
+                .check-mark {
+                    color: $body-text-color;
+                }
+            }
+
+            &.unavailable {
+                color: rgba(0, 0, 0, 0.4);
+
+                .check-mark {
+                    color: $body-text-color;
+                }
+            }
+        }
+    }
+
+    .price-btn {
+        color: $body-text-color;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $radioCanada;
+        text-transform: uppercase;
+        padding: 13px 30px 12px 35px;
+        display: inline-flex;
+        justify-content: space-between;
+        border: 1.5px solid $black;
+        border-radius: 40px;
+        width: 100%;
+        background: transparent;
+
+        &::before {
+            background: $black;
+        }
+
+        img {
+            @include transition(.4s);
+        }
+
+    }
+
+    @media #{$max-laptop} {
+        padding: 45px 15px 40px 15px;
+
+        .plan-price {
+            font-size: 45px;
+        }
+    }
+
+    @media #{$max-lg} {
+        .price-title {
+            font-size: 24px;
+        }
+
+    }
+
+    @media #{$max-md} {
+        .feature-list {
+            li {
+                font-size: 16px;
+            }
+        }
+
+        .plan-price {
+            font-size: 32px;
+        }
+
+        .ht-btn {
+            font-size: 16px;
+        }
+
+        padding: 30px 15px;
+    }
+
+    @media #{$max-xs} {
+        .ht-btn {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .shape-holder {
+            display: none;
+        }
+
+        .price-btn {
+            font-size: 16px;
+        }
+
+    }
+}
+
+// .pstyle-2 {
+//     background: #FFF0EA;
+// }
+
+// .pstyle-3 {
+//     background: #FFF8EA;
+// }

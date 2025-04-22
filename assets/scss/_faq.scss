@@ -1,0 +1,389 @@
+.faq-que-list {
+    .accordion-item:first-of-type>.accordion-header .accordion-button {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .accordion-item {
+        border: 0;
+        background-color: transparent;
+        margin-bottom: 30px;
+
+        button:focus,
+        input:focus,
+        input:focus,
+        textarea,
+        textarea:focus {
+            outline: 0;
+        }
+
+        .accordion-button {
+            border: 0;
+            border-radius: 0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border: 1px solid $theme-color2;
+            transition: unset;
+            color: $white;
+            font-size: 26px;
+            font-family: $radioCanada;
+            font-weight: 600;
+            line-height: 1.875rem;
+            box-shadow: none;
+            background: $theme-color2;
+            padding: 0;
+            padding: 34px 0 24px 20px;
+            position: relative;
+            box-shadow: 0;
+            -webkit-transition: unset;
+            -moz-transition: unset;
+            -ms-transition: unset;
+            -o-transition: unset;
+            word-wrap: normal;
+            display: inline-block;
+
+            &.collapsed {
+                border: 0;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-radius: 15px;
+                padding-bottom: 30px;
+                background: transparent;
+            }
+
+            @media #{$laptop} {
+                padding: 21px 20px;
+                font-size: 20px;
+            }
+
+            @media #{$lg} {
+                padding: 21px 20px;
+                font-size: 18px;
+            }
+
+            @media #{$xs} {
+                padding: 21px 10px;
+                font-size: 18px;
+            }
+
+            // &:not(.collapsed) {
+            //     color: $white;
+            //     background-color: unset;
+            //     box-shadow: unset;
+            // }
+            &:focus {
+                box-shadow: none;
+                outline: 0;
+            }
+
+            &::before {
+                content: "\F282";
+                position: absolute;
+                font-family: "bootstrap-icons";
+                font-size: 25px;
+                font-weight: 300;
+                color: $white;
+                text-align: center;
+                border-radius: 50%;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%) rotate(180deg);
+                transition: 0.3s linear;
+                z-index: 1;
+
+                @media #{$md} {
+                    right: 10px;
+                    font-size: 16px;
+                }
+
+                @media #{$xs} {
+                    color: $white;
+                    right: 5px;
+                    font-size: 16px;
+                }
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .collapsed {
+            color: $heding2;
+            border: 0;
+
+            &::before {
+                content: "\F286";
+                color: $heding2;
+                transform: translateY(-50%) rotate(0deg);
+            }
+        }
+
+        .accordion-body {
+            padding-top: 15px;
+            background: $theme-color2;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+            p {
+                color: $white;
+            }
+        }
+
+        @media #{$max-md} {
+            font-size: 20px;
+        }
+    }
+}
+
+.faq-style-2 {
+
+    .accordion-item {
+        border-radius: 15px;
+
+        .accordion-button {
+            background: transparent;
+            color: $heding2;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-bottom: 0;
+            border-color: $theme-color2;
+
+            &::before {
+                content: "\F2EA";
+                color: $theme-color2;
+                background: $theme-color;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+            }
+
+            &.collapsed {
+                border: 0;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+            }
+        }
+
+
+        .collapsed {
+            border: 0;
+
+            &::before {
+                content: "\F4FE";
+                color: $white;
+                background: $theme-color2;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+                transform: translateY(-50%) rotate(0deg);
+            }
+
+        }
+
+        .accordion-body {
+            background: transparent;
+            border: 1px solid $theme-color2;
+            border-top: 0;
+            padding-top: 0;
+
+            p {
+                color: $body-text-color2;
+            }
+        }
+    }
+}
+
+.faq-style-3 {
+
+    .accordion-item {
+        border-radius: 15px;
+
+        .accordion-button {
+            background: transparent;
+            color: $heding;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-bottom: 0;
+            border-color: $black;
+
+            &::before {
+                content: "\F2EA";
+                color: $theme-color2;
+                background: $theme-color;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+            }
+
+            &.collapsed {
+                border: 0;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+            }
+
+            @media #{$max-md} {
+                font-size: 20px;
+            }
+        }
+
+
+        .collapsed {
+            border: 0;
+
+            &::before {
+                content: "\F4FE";
+                color: $white;
+                background: $black;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+                transform: translateY(-50%) rotate(0deg);
+            }
+
+        }
+
+        .accordion-body {
+            background: transparent;
+            border: 1px solid $black;
+            border-top: 0;
+            padding-top: 0;
+
+            p {
+                color: $body-text-color;
+            }
+        }
+    }
+}
+
+.faq-style-4 {
+
+    .accordion-item {
+        border-radius: 15px;
+
+        .accordion-button {
+            background: transparent;
+            color: $heding;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-bottom: 0;
+            border-color: $black;
+
+            &::before {
+                content: "\F2EA";
+                color: $theme-color2;
+                background: $theme-color;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+            }
+
+            &.collapsed {
+                border: 0;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+            }
+        }
+
+
+        .collapsed {
+            border: 0;
+
+            &::before {
+                content: "\F4FE";
+                color: $white;
+                background: $black;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+                transform: translateY(-50%) rotate(0deg);
+            }
+
+        }
+
+        .accordion-body {
+            background: transparent;
+            border: 1px solid $black;
+            border-top: 0;
+            padding-top: 0;
+
+            p {
+                color: $body-text-color;
+            }
+        }
+    }
+}
+
+.faq-style-5 {
+    .accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .accordion-item {
+        border-radius: 15px;
+
+        .accordion-button {
+            background: transparent;
+            color: $heding;
+            border: 0;
+            padding-left: 0;
+            padding-right: 0;
+
+            &::before {
+                content: "\F2EA";
+                color: $theme-color2;
+                background: $theme-color;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+                right: 0;
+            }
+
+            &.collapsed {
+                border: 0;
+                border-radius: 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            }
+        }
+
+
+        .collapsed {
+            border: 0;
+
+
+            &::before {
+                content: "\F4FE";
+                color: $white;
+                background: $black;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+                right: 0;
+                transform: translateY(-50%) rotate(0deg);
+            }
+
+        }
+
+        .accordion-body {
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid $black;
+            padding-top: 0;
+            padding-left: 0;
+            padding-right: 0;
+
+            p {
+                color: $body-text-color;
+            }
+        }
+    }
+}

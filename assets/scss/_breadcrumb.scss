@@ -1,0 +1,100 @@
+//page-title-area
+.breadcrumb-wrapper {
+	padding-top: 110px;
+	padding-bottom: 110px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 2;
+
+	&::before {
+		content: "";
+		position: absolute;
+		background: rgba(0, 0, 0, 0.6);
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: -1;
+	}
+
+	.breadcrumb-title {
+		color: $white;
+		font-size: 120px;
+		font-weight: 700;
+		font-family: $radioCanada;
+	}
+
+	@media #{$max-laptop} {
+		.breadcrumb-title {
+			font-size: 35px;
+		}
+	}
+
+	@media #{$max-lg} {
+		padding-top: 110px;
+		padding-bottom: 110px;
+	}
+
+	@media #{$max-xs} {
+		.page-title {
+			font-size: 28px;
+		}
+	}
+}
+
+//breadcrumb
+ul.breadcumb-menu {
+	display: inline-block;
+	padding: 0;
+
+	& li {
+		display: inline-block;
+
+		&:last-child {
+			a {
+				color: $white;
+				margin-right: 0;
+				padding-right: 0;
+
+				&::before {
+					display: none;
+				}
+			}
+		}
+
+		& a {
+			color: $white;
+			font-size: 28px;
+			font-weight: 400;
+			font-family: $satoshiRegular;
+			line-height: 1;
+			display: inline-block;
+			padding-right: 10px;
+			margin-right: 10px;
+			position: relative;
+			z-index: 1;
+
+			&::before {
+				content: "";
+				position: absolute;
+				background: $white;
+				width: 2px;
+				height: 21px;
+				right: -4px;
+				top: 4px;
+				z-index: 1;
+				transform: rotate(23deg);
+			}
+
+			@media #{$max-laptop} {
+				font-size: 18px;
+
+				&::before {
+					top: 0;
+				}
+			}
+		}
+	}
+}

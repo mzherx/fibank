@@ -1,0 +1,199 @@
+/*title-one*/
+.title-one {
+    .sub-title {
+        color: $heding;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $radioCanada;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    .title {
+        font-size: 82px;
+        line-height: 1.03;
+        font-family: $radioCanada;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+
+    @media #{$max-laptop} {
+        .title {
+            font-size: 55px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 34px;
+        }
+
+    }
+
+    @media #{$max-lg} {
+        .title {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 34px;
+        }
+
+    }
+
+    @media #{$max-md} {
+        .title {
+            font-size: 32px;
+        }
+    }
+}
+
+/*title-two*/
+.title-two {
+    .sub-title {
+        color: $theme-color2;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $radioCanada;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    .title {
+        font-size: 82px;
+        line-height: 1.14;
+        font-family: $radioCanada;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+
+    @media #{$max-laptop} {
+        .title {
+            font-size: 55px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 34px;
+        }
+    }
+
+    @media #{$max-lg} {
+        .title {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 34px;
+        }
+
+    }
+
+    @media #{$max-md} {
+        .title {
+            font-size: 32px;
+        }
+    }
+}
+
+/*title-two*/
+.title-three {
+    .sub-title {
+        color: $heding2;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $radioCanada;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    .title {
+        color: $heding2;
+        font-size: 82px;
+        line-height: 1.14;
+        font-family: $radioCanada;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: $body-text-color2;
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+
+    @media #{$max-laptop} {
+        .title {
+            font-size: 55px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 34px;
+        }
+    }
+
+    @media #{$max-lg} {
+        .title {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 34px;
+        }
+
+    }
+
+    @media #{$max-md} {
+        .title {
+            font-size: 32px;
+        }
+    }
+}
+
+
+//cta-title
+.cta-title {
+    font-size: 82px;
+    font-weight: 600;
+    font-family: $radioCanada;
+    line-height: 1.1;
+
+    @media #{$max-laptop} {
+        font-size: 55px;
+    }
+
+    @media #{$max-md} {
+        font-size: 32px;
+    }
+}
+
+.semi-title {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: $radioCanada;
+
+    @media #{$max-laptop} {
+        font-size: 36px;
+    }
+
+    @media #{$max-lg} {
+        font-size: 28px;
+    }
+
+}

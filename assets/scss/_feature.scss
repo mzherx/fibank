@@ -1,0 +1,764 @@
+//feature-list
+.feature-list-one {
+    display: inline-flex;
+    align-items: center;
+    background: $theme-color;
+    border-radius: 45px;
+    padding: 7px 33px 7px 10px;
+
+    .icon {
+        display: inline-block;
+        background: $white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        line-height: 24px;
+        text-align: center;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+
+    .feature-title {
+        color: $heding;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+
+
+    @media #{$max-laptop} {
+        .icon {
+            margin-right: 5px;
+        }
+    }
+}
+
+.feature-list-two {
+    margin-bottom: 50px;
+    padding: 15px 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent transparent $black transparent;
+    @include transition(.4s);
+
+    .number {
+        color: $heding;
+        font-size: 26px;
+        margin-right: 35px;
+    }
+
+    .feature-title {
+        color: $heding;
+        font-size: 26px;
+        font-weight: 500;
+        font-family: $radioCanada;
+    }
+
+    &:hover {
+        background: $theme-color;
+        border: 2px solid $black;
+        border-radius: 15px;
+    }
+
+    @media #{$max-lg} {
+        .feature-title {
+            font-size: 18px;
+        }
+
+        .number {
+            margin-right: 5px;
+        }
+    }
+}
+
+.feature-list-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 30px 20px 30px 25px;
+    border: 2px solid $black;
+    border-radius: 15px;
+    @include transition(.4s);
+
+    .number {
+        color: $heding;
+        font-size: 26px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+    }
+
+    .feature-title {
+        color: $heding;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: $radioCanada;
+    }
+
+    .icon {
+        font-size: 30px;
+        display: inline-block;
+        background: $white;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        line-height: 70px;
+        text-align: center;
+        display: inline-block;
+        margin-right: 10px;
+        background: $theme-color;
+    }
+
+    &:hover {
+        background: $theme-color;
+        border-color: $theme-color;
+
+        .icon {
+            background: $white;
+        }
+    }
+
+    @media #{$max-lg} {
+        padding: 10px;
+
+        .feature-title {
+            font-size: 18px;
+        }
+
+        .number {
+            margin-right: 5px;
+        }
+
+        margin-bottom: 30px;
+    }
+}
+
+.feature-list-four {
+    display: flex;
+    align-items: center;
+
+    .icon {
+        color: $body-text-color;
+        font-size: 16px;
+        display: inline-block;
+        background: $theme-color;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        line-height: 20px;
+        text-align: center;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+
+    .feature-title {
+        color: $heding;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+
+
+    @media #{$max-laptop} {
+        .feature-title {
+            font-size: 18px;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+    }
+}
+
+.feature-list-five {
+    display: flex;
+    align-items: center;
+
+    .icon {
+        color: $white;
+        font-size: 20px;
+        display: inline-block;
+        background: $black;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        line-height: 50px;
+        text-align: center;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+
+    .feature-title {
+        color: $heding;
+        font-size: 22px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+
+
+    @media #{$max-laptop} {
+        .feature-title {
+            font-size: 18px;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+    }
+}
+
+.feature-list-six {
+    display: inline-flex;
+    align-items: center;
+
+    .icon {
+        color: $body-text-color;
+        font-size: 26px;
+        display: inline-block;
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+
+    .feature-title {
+        color: $heding;
+        font-size: 26px;
+        font-weight: 500;
+        font-family: $radioCanada;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+
+
+    @media #{$max-laptop} {
+        .icon {
+            margin-right: 5px;
+        }
+
+        .feature-title {
+            font-size: 20px;
+        }
+    }
+}
+
+.feature-list-seven {
+    display: flex;
+    align-items: center;
+
+    .icon {
+        color: $body-text-color;
+        font-size: 18px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: $theme-color;
+        margin-right: 15px;
+    }
+
+
+    .feature-title {
+        color: $heding;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+
+
+    @media #{$max-laptop} {
+        .icon {
+            margin-right: 5px;
+        }
+
+        .feature-title {
+            font-size: 20px;
+        }
+    }
+}
+
+
+.feature-wrap-1 {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 45px 45px 25px 45px;
+    margin-bottom: 45px;
+    @include transition(.4s);
+
+    .icon {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 110px;
+        margin-bottom: 26px;
+        margin-right: 25px;
+        background: $theme-color;
+        @include transition(.4s);
+    }
+
+    .front-icon {
+        display: inline-block;
+        visibility: visible;
+        @include transition(.4s);
+    }
+
+
+    .back-icon {
+        display: none;
+        visibility: hidden;
+        @include transition(.4s);
+    }
+
+    .content {
+        flex: 1;
+    }
+
+
+    .feature-title {
+        font-size: 36px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        margin-bottom: 15px;
+        line-height: 1;
+
+        a {
+            color: $heding2;
+            @include transition(.4s);
+        }
+    }
+
+    .description {
+        margin-bottom: 0;
+    }
+
+
+    &:hover {
+        background: $theme-color;
+        border-color: $theme-color;
+
+        .icon {
+            background: $white;
+        }
+
+        .front-icon {
+            display: none;
+            visibility: hidden;
+            @include transition(.4s);
+        }
+
+        .back-icon {
+            display: inline-block;
+            visibility: visible;
+            @include transition(.4s);
+        }
+
+    }
+
+    @media #{$max-laptop} {
+        .feature-title {
+            font-size: 24px;
+        }
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media #{$max-xs} {
+        display: block;
+        padding-bottom: 0px;
+    }
+}
+
+.feature-wrap-2 {
+    background: $light;
+    border-radius: 15px;
+    padding: 44px 88px 40px 60px;
+    margin-bottom: 45px;
+    @include transition(.4s);
+
+    .icon {
+        display: inline-block;
+        margin-bottom: 45px;
+    }
+
+
+    .feature-title {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        margin-bottom: 10px;
+
+        a {
+            color: $heding2;
+            @include transition(.4s);
+        }
+    }
+
+    .description {
+        margin-bottom: 20px;
+        @include transition(.4s);
+    }
+
+
+
+    @media #{$max-laptop} {
+
+        .feature-title {
+            font-size: 24px;
+        }
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.feature-slider-wrapper {
+    width: 100vw;
+}
+
+.feature-wrap-3 {
+    background: $white;
+    border-radius: 15px;
+    padding: 42px 45px 44px 45px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 45px;
+    @include transition(.4s);
+
+    .icon {
+        display: inline-block;
+        margin-bottom: 35px;
+    }
+
+
+    .feature-title {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        margin-bottom: 16px;
+
+        a {
+            color: $heding;
+            @include transition(.4s);
+        }
+    }
+
+    .description {
+        margin-bottom: 20px;
+        @include transition(.4s);
+    }
+
+    .feature-btn {
+        display: inline-block;
+    }
+
+
+    &:hover {}
+
+    @media #{$max-laptop} {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .feature-title {
+            font-size: 24px;
+        }
+    }
+}
+
+.feature-wrap-4 {
+    .feature-title {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        margin-bottom: 16px;
+        color: $heding;
+        @include transition(.4s);
+    }
+
+    .description {
+        margin-bottom: 50px;
+        @include transition(.4s);
+    }
+}
+
+.feature-border-2 {
+    border: 2px solid $black;
+    border-radius: 30px;
+}
+
+.feature-wrap-5 {
+    text-align: center;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+    @include transition(.4s);
+
+    .arrow-shape1,
+    .arrow-shape2 {
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .arrow-shape1 {
+        left: -14%;
+        top: 30%;
+    }
+
+    .arrow-shape2 {
+        right: -14%;
+        top: 30%;
+    }
+
+    .icon {
+        display: inline-block;
+        width: 325px;
+        height: 325px;
+        border-radius: 50%;
+        line-height: 320px;
+        text-align: center;
+        border: 2px solid $black;
+        margin-bottom: 37px;
+        position: relative;
+        z-index: 1;
+        @include transition(.4s);
+
+    }
+
+
+    .feature-title {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        margin-bottom: 14px;
+
+        a {
+            color: $heding;
+            @include transition(.4s);
+        }
+    }
+
+    .description {
+        margin-bottom: 20px;
+        @include transition(.4s);
+    }
+
+    @media #{$max-laptop} {
+
+        .feature-title {
+            font-size: 24px;
+        }
+    }
+
+    @media #{$max-lg} {
+
+        .arrow-shape1,
+        .arrow-shape2 {
+            display: none;
+        }
+    }
+
+    @media #{$max-xs} {
+        .icon {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+.feature-wrap-6 {
+    background: $white;
+    border-radius: 30px;
+    padding: 45px 35px 48px 45px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 45px;
+    @include transition(.4s);
+
+    .icon {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $theme-color2;
+        margin-bottom: 32px;
+        @include transition(.4s);
+    }
+
+
+    .feature-title {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        margin-bottom: 16px;
+
+        a {
+            color: $heding;
+            @include transition(.4s);
+        }
+    }
+
+    .description {
+        margin-bottom: 20px;
+        @include transition(.4s);
+    }
+
+    .arrow-btn {
+        display: inline-block;
+    }
+
+
+    &:hover {
+        background: $light;
+        border-color: $light;
+    }
+
+    @media #{$max-laptop} {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .feature-title {
+            font-size: 24px;
+        }
+    }
+}
+
+.feature-wrap-7 {
+    text-align: center;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+    @include transition(.4s);
+
+    .arrow-shape1,
+    .arrow-shape2 {
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        filter: invert(1);
+    }
+
+    .arrow-shape1 {
+        left: -14%;
+        top: 30%;
+    }
+
+    .arrow-shape2 {
+        right: -14%;
+        top: 30%;
+    }
+
+    .icon {
+        display: inline-block;
+        width: 325px;
+        height: 325px;
+        border-radius: 50%;
+        line-height: 320px;
+        text-align: center;
+        background: $white;
+        margin-bottom: 37px;
+        position: relative;
+        z-index: 1;
+        @include transition(.4s);
+
+    }
+
+
+    .feature-title {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        margin-bottom: 14px;
+
+        a {
+            color: $white;
+            @include transition(.4s);
+        }
+    }
+
+    .description {
+        color: $white;
+        margin-bottom: 20px;
+        @include transition(.4s);
+    }
+
+    @media #{$max-laptop} {
+
+        .feature-title {
+            font-size: 24px;
+        }
+    }
+
+    @media #{$max-xs} {
+        .icon {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+.block-style-1 {
+    display: flex;
+    align-items: center;
+    background: $white;
+    border-radius: 20px;
+    padding: 35px 35px 35px 40px;
+
+    .flag {
+        margin-right: 30px;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    p {
+        color: $body-text-color2;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        font-size: 22px;
+        margin-bottom: 0;
+
+        span {
+            font-size: 34px;
+            font-weight: 500;
+            font-family: $radioCanada;
+        }
+    }
+
+    @media #{$max-lg} {
+        display: block;
+        text-align: center;
+
+        .flag {
+            margin-right: 0;
+            margin-bottom: 25px;
+        }
+    }
+
+    @media #{$max-md} {
+        padding-left: 5px;
+        padding-right: 5px;
+
+        p {
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+}

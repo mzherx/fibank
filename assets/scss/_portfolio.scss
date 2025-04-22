@@ -1,0 +1,458 @@
+//portfolio-style-one
+
+.portfolio-section-bg {
+    width: 100%;
+    height: 640px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.portfolio-wrap-1 {
+    margin-bottom: 45px;
+
+    .portfolio-thumb {
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: #175557;
+            opacity: 0;
+            visibility: hidden;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            border-radius: 20px;
+            @include transition(.4s);
+        }
+
+        img {
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+
+    .pf-title {
+        color: $heding;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        line-height: 1;
+        margin-bottom: 15px;
+        transition: all 0.4s;
+    }
+
+    .pf-tag {
+        color: $heding;
+        font-size: 20px;
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 11px;
+    }
+
+    .icon-link {
+        font-size: 32px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: $theme-color;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        @include transition(.4s);
+
+        img {
+            width: auto;
+        }
+    }
+
+    &:hover {
+        .portfolio-thumb {
+            &::before {
+                opacity: 0.4;
+                visibility: visible;
+            }
+        }
+
+        .icon-link {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+
+    @media #{$max-lg} {
+        .pf-title {
+            font-size: 24px;
+        }
+    }
+
+}
+
+.portfolio-wrap-2 {
+    background: $white;
+    border-radius: 30px;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+
+    .portfolio-thumb {
+        margin-bottom: 30px;
+
+        img {
+            border-radius: 30px 30px 0 0;
+            width: 100%;
+        }
+    }
+
+    .content {
+        padding-left: 30px;
+        padding-bottom: 28px;
+        max-width: 85%;
+    }
+
+    .pf-title {
+        color: $heding;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        line-height: 1;
+        margin-bottom: 15px;
+        transition: all 0.4s;
+    }
+
+    .pf-tag {
+        color: $heding;
+        font-size: 20px;
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 11px;
+    }
+
+    .icon-link {
+        color: $white;
+        font-size: 32px;
+        width: 90px;
+        height: 90px;
+        border-radius: 20px;
+        background: $theme-color2;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 3;
+        right: 30px;
+        bottom: 30px;
+        @include transition(.4s);
+
+        img {
+            width: auto;
+            border-radius: 0;
+        }
+
+        &:hover {
+            background: $theme-color;
+
+            img {
+                filter: invert(1);
+            }
+        }
+    }
+
+
+
+    @media #{$max-lg} {
+        .icon-link {
+            top: 50%;
+            bottom: auto;
+            width: 60px;
+            height: 60px;
+        }
+
+        .pf-title {
+            font-size: 24px;
+        }
+
+        .content {
+            max-width: 100%;
+        }
+    }
+
+}
+
+.portfolio-wrap-3 {
+    background: $grey;
+    border-radius: 30px;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+
+    .portfolio-thumb {
+        margin-bottom: 30px;
+
+        img {
+            border-radius: 30px 30px 0 0;
+            width: 100%;
+        }
+    }
+
+    .content {
+        padding-left: 30px;
+        padding-bottom: 28px;
+        max-width: 90%;
+    }
+
+    .pf-title {
+        color: $heding;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        line-height: 1;
+        margin-bottom: 15px;
+        max-width: 90%;
+        transition: all 0.4s;
+    }
+
+    .pf-tag {
+        color: $heding;
+        font-size: 20px;
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 11px;
+    }
+
+    .icon-link {
+        color: $white;
+        font-size: 32px;
+        width: 90px;
+        height: 90px;
+        border-radius: 20px;
+        background: $theme-color2;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 3;
+        right: 30px;
+        bottom: 30px;
+        @include transition(.4s);
+
+        img {
+            width: auto;
+            border-radius: 0;
+        }
+
+        &:hover {
+            background: $theme-color;
+
+            img {
+                filter: invert(1);
+            }
+        }
+    }
+
+    @media #{$max-laptop} {
+        .icon-link {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    @media #{$max-lg} {
+        .icon-link {
+            top: 50%;
+            bottom: auto;
+            width: 60px;
+            height: 60px;
+        }
+
+        .pf-title {
+            font-size: 24px;
+        }
+
+        .content {
+            max-width: 100%;
+            padding-left: 15px;
+        }
+    }
+
+}
+
+.project-details-content {
+    img {
+        border-radius: 30px;
+    }
+}
+
+//filter menu
+.portfolio-menu {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px 5px 20px;
+    border-radius: 50px;
+    width: max-content;
+
+    .gf_btn {
+        color: $black;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 18px;
+        padding: 11px 20px;
+        border: 0px;
+        border-radius: 40px;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-bottom: 5px;
+        background: transparent;
+        position: relative;
+        z-index: 1;
+        @include transition(0.6s);
+
+        &:hover,
+        &.active {
+            background: $theme-color;
+            color: $white;
+        }
+    }
+
+    @media #{$max-md} {
+        .gf_btn {
+            font-size: 16px;
+            padding: 10px;
+        }
+    }
+}
+
+.project-info {
+    padding-top: 45px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    background: $theme-color2;
+    border-radius: 20px;
+    margin-top: -350px;
+
+    .project-info-top-title {
+        color: $white;
+        font-size: 36px;
+        font-family: $radioCanada;
+        font-weight: 600;
+        margin-bottom: 45px;
+    }
+
+    .info-box {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+        .icon {
+            color: $black;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            background: $theme-color;
+            border-radius: 50%;
+            font-size: 26px;
+            margin-right: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            color: $white;
+            opacity: 0.7;
+            margin-bottom: 0px;
+        }
+
+        h5 {
+            color: $white;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: $satoshiMedium;
+        }
+
+        @media #{$max-xs} {
+
+            p,
+            h5 {
+
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media #{$max-xl} {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media #{$max-laptop} {
+        margin-top: 0;
+    }
+
+    @media #{$max-xs} {
+        .project-info-top-title {
+            font-size: 24px;
+        }
+    }
+}
+
+.portfolio-navigation-wrap {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.portfolio-navigation {
+
+    .icon-link {
+        border: 1px solid $black;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        justify-content: center;
+        @include transition(.4s);
+
+        img {
+            @include transition(.4s);
+        }
+
+        &:hover {
+            border-color: $theme-color;
+            background: $theme-color;
+
+            img {
+                filter: invert(1);
+            }
+        }
+
+        @media #{$max-xs} {
+            margin-bottom: 30px;
+        }
+    }
+
+    .pf-tag {
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .pf-title {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+}

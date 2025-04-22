@@ -1,0 +1,107 @@
+/* search-area */
+.search-area {
+	.search-input {
+		color: $heding;
+		font-size: 20px;
+		width: 60px;
+		height: 60px;
+		display: inline-block;
+		border: 1.5px solid $heding;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 60px;
+		position: relative;
+		z-index: 1;
+
+		&:hover {
+			background: $theme-color;
+			color: $white;
+		}
+	}
+}
+
+/* Full screen search
+-------------------------------------------------------*/
+.offcanvas-top {
+	// height: 50vh;
+	min-height: 150px;
+
+	.search-close {
+		position: absolute;
+		top: 50px;
+		right: 50px;
+		font-size: 30px;
+		color: #fff;
+		cursor: pointer;
+	}
+}
+
+.search-wrap {
+	padding-bottom: 100px;
+
+	input {
+		color: $white;
+		font-size: 80px;
+		width: 100%;
+		background: transparent;
+		border: 0;
+		text-align: center;
+		display: inline-block;
+		height: auto;
+		padding: 0;
+		display: inline-block;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		border-bottom: 2px solid $white;
+
+		&::placeholder {
+			color: $white;
+			padding-bottom: 80px;
+			font-size: 80px;
+			font-family: $radioCanada;
+
+			@media #{$laptop} {
+				font-size: 50px;
+			}
+
+			@media #{$lg} {
+				font-size: 40px;
+			}
+
+			@media #{$md} {
+				font-size: 30px;
+			}
+
+			@media #{$xs} {
+				font-size: 20px;
+			}
+		}
+
+		&::-moz-placeholder,
+		&::-webkit-placeholder,
+		&::-o-placeholder,
+		&::-ms-placeholder {
+			color: $white;
+			padding-bottom: 80px;
+			font-size: 80px;
+			font-family: $radioCanada;
+
+			@media #{$laptop} {
+				font-size: 50px;
+			}
+
+			@media #{$lg} {
+				font-size: 40px;
+			}
+
+			@media #{$md} {
+				font-size: 30px;
+			}
+
+			@media #{$xs} {
+				font-size: 30px;
+			}
+		}
+	}
+}

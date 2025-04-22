@@ -1,0 +1,33 @@
+@media (min-width: 1600px) {
+
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1470px;
+  }
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 30px;
+}
+
+.row {
+  --bs-gutter-x: 30px;
+}
+
+.gx-50 {
+  --bs-gutter-x: 50px;
+
+  @media #{$max-laptop} {
+    --bs-gutter-x: 30px;
+  }
+}

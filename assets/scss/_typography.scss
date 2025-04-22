@@ -1,0 +1,210 @@
+//font-weight
+.fw-exbold {
+    font-weight: 800 !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-semi {
+    font-weight: 600 !important;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.fw-normal {
+    font-weight: 400 !important;
+}
+
+.fw-light {
+    font-weight: 300 !important;
+}
+
+.fw-thin {
+    font-weight: 100 !important;
+}
+
+//font-size
+
+.text-xl {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: $satoshiMedium;
+    line-height: 1.8;
+
+    @media #{$max-laptop} {
+        font-size: 20px;
+    }
+}
+
+.text-lg {
+    font-size: 22px !important;
+    line-height: 45px;
+
+    @media #{$max-lg} {
+        font-size: 20px !important;
+        line-height: 34px;
+    }
+
+    @media #{$max-md} {
+        font-size: 18px !important;
+        line-height: 34px;
+    }
+}
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.fs-18 {
+    font-size: 18px !important;
+}
+
+.fs-16 {
+    font-size: 16px !important;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.fs-12 {
+    font-size: 12px !important;
+}
+
+/*--
+    - Background color
+-----------------------------------------*/
+
+.grey-bg {
+    background: $grey;
+}
+
+.light-grey-bg {
+    background: $light-grey;
+}
+
+.white-bg {
+    background: $white;
+}
+
+.black-bg {
+    background: $heding !important;
+}
+
+.heding-bg {
+    background: $heding !important;
+}
+
+.theme-bg {
+    background: $theme-color !important;
+}
+
+.theme-bg2 {
+    background: $theme-color2 !important;
+}
+
+
+/*--
+    - color
+-----------------------------------------*/
+.text-white {
+    color: $white;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-theme {
+    color: $theme-color !important;
+}
+
+.text-theme2 {
+    color: $theme-color2 !important;
+}
+
+.text-body {
+    color: $body-text-color !important;
+}
+
+.text-body2 {
+    color: $body-text-color !important;
+}
+
+.text-heding {
+    color: $heding !important;
+}
+
+.text-heding2 {
+    color: $heding2 !important;
+}
+
+/*--
+    - fonts
+-----------------------------------------*/
+
+.body-font {
+    font-family: $satoshiRegular !important;
+}
+
+.heding-font {
+    font-family: $radioCanada !important;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+//background-none
+.bg-none {
+    background: none !important;
+}
+
+//before-none
+.before-none {
+    &::before {
+        display: none !important;
+    }
+}
+
+//after-none
+.after-none {
+    &::before {
+        display: none !important;
+    }
+}
+
+.border-rad {
+    border-radius: 50px;
+}
+
+
+/*---font family----*/
+
+.satoshibold {
+    font-family: $satoshiBold !important;
+}
+
+.satoshiregular {
+    font-family: $satoshiRegular !important;
+}
+
+.satoshimedium {
+    font-family: $radioCanada !important;
+}
+
+.radiofont {
+    font-family: $radioCanada !important;
+}

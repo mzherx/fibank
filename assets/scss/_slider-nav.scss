@@ -1,0 +1,341 @@
+ul.slick-dots {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 45px;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        border: 0;
+        width: unset;
+        height: unset;
+
+        button {
+            border: 0;
+            font-size: 0;
+            width: 17px;
+            height: 17px;
+            margin: 0px 7px 0px 7px;
+            border: 1.5px solid $black;
+            padding: 0;
+            border-radius: 50%;
+            background: transparent;
+        }
+
+        &.slick-active {
+            button {
+                width: 17px;
+                height: 17px;
+                background: $black;
+                transform: translateY(-1px);
+            }
+        }
+    }
+}
+
+.dot-style-1 {
+    ul.slick-dots {
+        margin-top: 0;
+    }
+}
+
+.dot-style-2 {
+    ul.slick-dots {
+        margin-top: 0;
+
+        li {
+            button {
+                background: rgba(0, 0, 0, 0.1);
+            }
+
+            &.slick-active {
+                button {
+                    background: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.dot-style-3 {
+    ul.slick-dots {
+        margin-top: 0;
+
+        li {
+            button {
+                background: rgba(0, 0, 0, 0.1);
+            }
+
+            &.slick-active {
+                button {
+                    background: $theme-color2;
+                }
+            }
+        }
+    }
+}
+
+
+.arrow-style-1 {
+
+    .slick-prev,
+    .slick-next,
+    .next-p1,
+    .prev-p1,
+    .slick-arrow {
+        background: transparent;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        border: 0;
+        cursor: pointer;
+        @include transition(.4s);
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            right: -23px;
+            top: -23px;
+            border: 1px solid $theme-color2;
+            z-index: -1;
+            @include transition(.4s);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: $theme-color2;
+            width: 26px;
+            height: 2px;
+            left: 0;
+            top: 7px;
+            z-index: 3;
+            @include transition(.4s);
+        }
+
+        img {
+            @include transition(.4s);
+        }
+
+        &:hover {
+            &::before {
+                border-color: $theme-color;
+                background: $theme-color;
+            }
+        }
+    }
+
+    .slick-prev {
+        justify-content: end;
+        margin-right: 20px;
+
+        &::before {
+            left: -23px;
+            right: auto;
+        }
+
+        &::after {
+            left: auto;
+            right: 0;
+        }
+    }
+}
+
+
+.arrow-style-2,
+.arrow-style-4 {
+
+    .slick-arrow,
+    .slick-prev,
+    .slick-next {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid $black;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        @include transition(.4s);
+
+
+        &:hover {
+            background: $theme-color;
+            border-color: $theme-color;
+        }
+    }
+
+    .prev-p1 {
+        justify-content: end;
+        margin-right: 20px;
+
+        &::before {
+            left: -23px;
+            right: auto;
+        }
+
+        &::after {
+            left: auto;
+            right: 0;
+        }
+    }
+}
+
+.arrow-style-4 {
+    .slick-arrow {
+        border-color: $white;
+
+        img {
+            filter: invert(1);
+        }
+
+        &:hover {
+            img {
+                filter: invert(0);
+            }
+        }
+    }
+}
+
+.arrow-style-3 {
+    .slick-arrow {
+        background: $black;
+        border: 0;
+        width: 90px;
+        height: 90px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px 0 15px 0;
+        position: relative;
+        @include transition(.4s);
+
+        img {
+            @include transition(.4s);
+        }
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: -12px;
+            background: $light2;
+            width: 102px;
+            height: 102px;
+            border-radius: 20px 0 15px 0;
+            z-index: -2;
+        }
+
+        &:hover {
+            background: $theme-color;
+
+            img {
+                filter: invert(1);
+            }
+        }
+    }
+}
+
+.feature-slider-wrap {
+    position: relative;
+    z-index: 1;
+
+    .feature-arrow-border {
+        width: 100%;
+        height: 2px;
+        background: $black;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .arrow-style-2 {
+        position: absolute;
+        bottom: -30px;
+        right: 23.5%;
+    }
+
+    &.border-arrow-2 {
+        .arrow-style-2 {
+            width: max-content;
+            right: 40%;
+        }
+    }
+}
+
+
+.number-wrapper {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        background: $black;
+        width: 229px;
+        height: 1.5px;
+        position: relative;
+        left: 0;
+        top: -6px;
+        display: inline-block;
+        margin-right: 35px;
+    }
+
+
+    .number-pagination {
+        color: $heding;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        display: inline-block;
+        line-height: 1;
+    }
+
+    .total-pagination {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.3);
+        display: inline-block;
+        line-height: 1;
+    }
+
+    .divider-line {
+        width: 2px;
+        height: 17px;
+        background: rgba(0, 0, 0, 0.3);
+        display: inline-block;
+        margin: 0 6px 0 4px;
+        line-height: 1;
+        transform: rotate(20deg) translateY(1px);
+    }
+}
+
+.number-wrapper-2 {
+    display: inline-flex;
+    position: absolute;
+    left: 70px;
+    bottom: 81px;
+    z-index: 2;
+    transform: rotate(-90deg);
+
+
+    .number-pagination {
+        font-size: 22px;
+        font-weight: 500;
+        font-family: $satoshiRegular;
+        color: $heding;
+    }
+
+    @media #{$max-md} {
+        left: 0;
+        bottom: 0;
+    }
+}

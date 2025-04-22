@@ -1,0 +1,629 @@
+.service-wrap-1 {
+    padding: 50px 50px 60px 50px;
+    position: relative;
+    z-index: 1;
+    @include transition(.4s);
+
+    .icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: $theme-color2;
+        text-align: center;
+        line-height: 72px;
+        margin-bottom: 26px;
+        @include transition(.4s);
+
+        img {
+            display: inline-block;
+            @include transition(.4s);
+        }
+    }
+
+    .service-title {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        margin-bottom: 10px;
+
+        a {
+            color: $heding2;
+            @include transition(.4s);
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+
+    .description {
+        color: $body-text-color2;
+        margin-bottom: 55px;
+    }
+
+    .more-btn {
+        color: $body-text-color2;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        text-transform: uppercase;
+        border-bottom: 1.5px solid $black;
+        @include transition(.4s);
+
+        &:hover {
+            border-bottom-color: transparent;
+        }
+    }
+
+    @media #{$max-laptop} {
+        .service-title {
+            a {
+                font-size: 24px;
+            }
+        }
+
+        padding: 15px;
+
+        .description {
+            margin-bottom: 10px;
+        }
+
+    }
+
+    @media #{$max-xs} {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.service-border {
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 40px 30px 40px 40px;
+    margin-bottom: 50px;
+
+    @media #{$max-lg} {
+        padding: 15px;
+    }
+
+    @media #{$max-md} {
+        padding: 15px 0;
+    }
+}
+
+
+.service-wrap-2 {
+    background: $white;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 45px 35px 60px 35px;
+    margin-bottom: 45px;
+    @include transition(.4s);
+
+    .icon {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        line-height: 76px;
+        text-align: center;
+        background: $theme-color2;
+        margin-bottom: 23px;
+        position: relative;
+        z-index: 1;
+        @include transition(.4s);
+
+        .front-icon {
+            display: inline-block;
+            @include transition(.4s);
+        }
+
+        .back-icon {
+            display: none;
+            visibility: hidden;
+            opacity: 1;
+            @include transition(.4s);
+        }
+    }
+
+
+    .service-title {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        margin-bottom: 10px;
+
+        a {
+            color: $heding2;
+            @include transition(.4s);
+        }
+    }
+
+    .description {
+        margin-bottom: 20px;
+        @include transition(.4s);
+    }
+
+    .more-btn {
+        color: $body-text-color2;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: $radioCanada;
+
+        i {
+            font-size: 20px;
+            margin-left: 6px;
+        }
+    }
+
+
+    &:hover {
+        background: $theme-color;
+        border-color: $theme-color;
+
+        .icon {
+            background: $white;
+            transform: scale(1.1);
+
+            .front-icon {
+                display: none;
+                visibility: hidden;
+            }
+
+            .back-icon {
+                display: inline-block;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    @media #{$max-laptop} {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .service-title {
+            a {
+                font-size: 28px;
+            }
+        }
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+.service-container-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120px;
+
+    @media #{$max-laptop} {
+        gap: 15px;
+    }
+
+    @media #{$max-md} {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 15px;
+    }
+
+    @media #{$max-xs} {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+.service-wrap-3 {
+    text-align: center;
+    margin-bottom: 45px;
+    @include transition(.4s);
+
+    .icon {
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        line-height: 245px;
+        text-align: center;
+        border: 2px solid $black;
+        margin-bottom: 37px;
+        position: relative;
+        z-index: 1;
+        @include transition(.4s);
+
+        .front-icon {
+            display: inline-block;
+            @include transition(.4s);
+        }
+
+        .back-icon {
+            display: none;
+            visibility: hidden;
+            opacity: 1;
+            @include transition(.4s);
+        }
+    }
+
+
+    .service-title {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        margin-bottom: 14px;
+
+        a {
+            color: $heding;
+            @include transition(.4s);
+        }
+    }
+
+    .description {
+        margin-bottom: 20px;
+        @include transition(.4s);
+    }
+
+    &:hover {
+        .icon {
+            background: $black;
+
+            .front-icon {
+                display: none;
+                visibility: hidden;
+            }
+
+            .back-icon {
+                display: inline-block;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    @media #{$max-laptop} {
+
+        .service-title {
+            a {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.service-wrap-4 {
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 50px 60px 58px 40px;
+    margin-bottom: 60px;
+    @include transition(.4s);
+
+    .icon {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $theme-color2;
+        background: $theme-color2;
+        margin-right: 60px;
+        @include transition(.4s);
+
+        .front-icon {
+            display: inline-block;
+            @include transition(.4s);
+        }
+
+        .back-icon {
+            display: none;
+            visibility: hidden;
+            opacity: 1;
+            @include transition(.4s);
+        }
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    .service-title {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        line-height: 1;
+        margin-bottom: 23px;
+
+        a {
+            color: $heding;
+            @include transition(.4s);
+
+            &:hover {
+                color: $theme-color2;
+            }
+        }
+    }
+
+    .description {
+        color: $body-text-color;
+        margin-bottom: 44px;
+    }
+
+    .more-btn {
+        color: $body-text-color;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $radioCanada;
+        text-transform: uppercase;
+        letter-spacing: 0.05px;
+        border-bottom: 1.5px solid $black;
+        display: inline-block;
+        @include transition(.4s);
+
+        img {
+            display: inline-block;
+            margin-left: 15px;
+        }
+
+        &:hover {
+            border-bottom-color: transparent;
+        }
+    }
+
+    &:hover {
+        background: #E4F0F0;
+        border-color: $black;
+
+        .icon {
+            background: $theme-color;
+            border-color: $black;
+
+            .front-icon {
+                display: none;
+                visibility: hidden;
+            }
+
+            .back-icon {
+                display: inline-block;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    @media #{$max-laptop} {
+        .icon {
+            margin-right: 15px;
+        }
+
+        .service-title {
+            font-size: 24px;
+        }
+
+        padding:30px 15px;
+
+        .description {
+            margin-bottom: 10px;
+        }
+
+    }
+
+    @media #{$max-xs} {
+        .more-btn {
+            font-size: 16px;
+        }
+
+        .icon {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.service-wrap-5 {
+    background: $white;
+    border-radius: 30px;
+    padding: 45px 35px 48px 45px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 45px;
+    @include transition(.4s);
+
+    .icon {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f4f4f4;
+        margin-bottom: 32px;
+        @include transition(.4s);
+
+        .front-icon {
+            display: inline-block;
+            @include transition(.4s);
+        }
+
+        .back-icon {
+            display: none;
+            visibility: hidden;
+            opacity: 1;
+            @include transition(.4s);
+        }
+    }
+
+
+    .service-title {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        margin-bottom: 16px;
+
+        a {
+            color: $heding;
+            @include transition(.4s);
+        }
+    }
+
+    .description {
+        margin-bottom: 20px;
+        @include transition(.4s);
+    }
+
+    .more-btn {
+        display: inline-block;
+    }
+
+
+    &:hover {
+        background: $light;
+        border-color: $light;
+
+        .icon {
+            background: $theme-color2;
+
+            .front-icon {
+                display: none;
+                visibility: hidden;
+            }
+
+            .back-icon {
+                display: inline-block;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    @media #{$max-laptop} {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .service-title {
+            font-size: 28px;
+        }
+    }
+}
+
+.service-wrap-6 {
+    background: $white;
+    border-radius: 30px;
+    padding: 50px 60px 58px 40px;
+    margin-bottom: 60px;
+    @include transition(.4s);
+
+    .icon {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $theme-color2;
+        margin-right: 60px;
+        @include transition(.4s);
+
+        .front-icon {
+            display: inline-block;
+            @include transition(.4s);
+        }
+
+        .back-icon {
+            display: none;
+            visibility: hidden;
+            opacity: 1;
+            @include transition(.4s);
+        }
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    .service-title {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $radioCanada;
+        line-height: 1;
+        margin-bottom: 23px;
+
+        a {
+            color: $heding;
+            @include transition(.4s);
+
+            &:hover {
+                color: $theme-color2;
+            }
+        }
+    }
+
+    .description {
+        color: $body-text-color;
+        margin-bottom: 44px;
+    }
+
+    .more-btn {
+        color: $body-text-color;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $radioCanada;
+        letter-spacing: 0.05px;
+        border-bottom: 1.5px solid $black;
+        display: inline-block;
+        @include transition(.4s);
+
+        img {
+            display: inline-block;
+            margin-left: 15px;
+        }
+
+        &:hover {
+            border-bottom-color: transparent;
+        }
+    }
+
+    &:hover {
+
+        .icon {
+            background: $theme-color;
+            border-color: $black;
+
+            .front-icon {
+                display: none;
+                visibility: hidden;
+            }
+
+            .back-icon {
+                display: inline-block;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    @media #{$max-laptop} {
+        .service-title {
+            font-size: 24px;
+        }
+
+        padding:30px 15px;
+
+        .description {
+            margin-bottom: 10px;
+        }
+
+    }
+
+    @media #{$max-xs} {
+        .icon {
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+
+        .more-btn {
+            font-size: 16px;
+        }
+    }
+}

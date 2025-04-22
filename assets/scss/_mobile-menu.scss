@@ -1,0 +1,135 @@
+.ht-menu-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 999999;
+	width: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+	opacity: 0;
+	visibility: hidden;
+
+	.mobile-logo {
+		border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+		padding-bottom: 31px;
+
+	}
+
+	.mobile-menu-wrapper {
+		overflow-y: scroll;
+		max-height: calc(100vh - 200px);
+		padding-bottom: 40px;
+		margin-top: 33px;
+		text-align: left;
+
+
+		span.float-end {
+			display: none;
+		}
+
+	}
+
+}
+
+.ht-menu-wrapper .ht-menu-area {
+	padding: 50px 20px;
+	width: 100%;
+	max-width: 310px;
+	background-color: $heding;
+	border-right: 3px solid $theme-color;
+	height: 100%;
+	position: relative;
+	left: -110%;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all ease 1s;
+	transition: all ease 1s;
+	z-index: 1;
+}
+
+.ht-menu-wrapper .ht-menu-toggle {
+	border: none;
+	font-size: 22px;
+	position: absolute;
+	right: -16.5px;
+	top: 25px;
+	padding: 0;
+	line-height: 1;
+	width: 33px;
+	height: 33px;
+	line-height: 35px;
+	font-size: 16px;
+	z-index: 1;
+	color: $white;
+	background-color: $theme-color;
+	border-radius: 50%;
+}
+
+.ht-menu-wrapper.ht-body-visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+.ht-menu-wrapper.ht-body-visible .ht-menu-area {
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+}
+
+.ht-mobile-menu ul li {
+	border-bottom: 1px solid #fdedf1;
+	list-style-type: none;
+}
+
+.ht-mobile-menu ul li {
+	border-bottom: 1px solid #fdedf1;
+	list-style-type: none;
+}
+
+.ht-mobile-menu ul li a {
+	display: block;
+	position: relative;
+	padding: 12px 0;
+	line-height: 1.4;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: var(--white-color);
+	padding-left: 18px;
+}
+
+.offset-widget {
+	margin-top: 50px;
+
+	&.offset-logo {
+		border-bottom: 1px solid #eeecec;
+		padding-bottom: 20px;
+	}
+
+	& .info-widget {
+		& .offset-title {
+			color: $white;
+			font-size: 20px;
+			font-weight: 800;
+			color: $white;
+		}
+
+		& p {
+			color: $white;
+		}
+
+		&.info-widget2 {
+			& p {
+				margin-bottom: 15px;
+
+				i {
+					margin-right: 7px;
+					color: $white;
+				}
+			}
+		}
+	}
+}

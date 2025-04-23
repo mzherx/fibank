@@ -5,7 +5,7 @@ A clean, modern UI for a financial & Banking application built with HTML, CSS, a
 
 🔗 Live Demo: https://fibank-site.vercel.app
 
-[![Pixelect-s-video.gif](https://i.postimg.cc/Qt045sk2/Pixelect-s-video.gif)](https://postimg.cc/Kk3DS6Wf)
+![Demo GIF](./fibankgif.gif)
 
 ## 🛠 Tech Stack
 

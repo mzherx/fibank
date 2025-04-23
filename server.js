@@ -1,11 +1,15 @@
-// server.js
 const express = require('express');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname)));
+// ✅ Serve static files from the 'assets' folder
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
+// ✅ Optional: also serve HTML files from root (if needed)
+app.use(express.static(__dirname));
+
+// Routes for HTML pages
 app.get('/about', (req, res) => {
   res.sendFile(path.join(__dirname, 'about.html'));
 });
@@ -46,6 +50,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+// Handle 404 - page not found
 app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname, 'error.html'));
 });
